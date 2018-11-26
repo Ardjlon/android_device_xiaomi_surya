@@ -13,3 +13,7 @@ allow init sysfs_vibrator:file rw_file_perms;
 
 allow init per_boot_file:file ioctl;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
+
+
+# Boot reason
+allow init proc_kernel_boot_reason:file { read getattr };

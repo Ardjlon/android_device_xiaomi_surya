@@ -15,3 +15,9 @@ set_prop(vendor_init, dirac_prop)
 set_prop(vendor_init, vendor_audio_prop)
 
 allow vendor_init dirac_prop:property_service set;
+
+# Printk
+allow vendor_init proc_kernel_printk:file write;
+
+# Sched boost
+allow vendor_init proc_kernel_sched_boost:file { open write };

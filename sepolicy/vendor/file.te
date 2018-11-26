@@ -8,3 +8,24 @@ type proc_sched_boost, fs_type, proc_type;
 
 # Data files
 type per_boot_file, file_type, data_file_type, core_data_file_type;
+
+# Boot reason
+type proc_kernel_boot_reason, fs_type, proc_type;
+
+# Last kmsg
+type proc_last_kmsg, fs_type, proc_type;
+
+# Loop sysfs files
+#type sysfs_loop, fs_type, sysfs_type;
+
+# PCI
+type proc_pci_devices, fs_type, proc_type;
+
+# Printk
+type proc_kernel_printk, fs_type, proc_type;
+
+# Sched boost
+type proc_kernel_sched_boost, fs_type, proc_type;
+
+# Wcnss sysfs files
+type sysfs_wcnss, fs_type, sysfs_type;

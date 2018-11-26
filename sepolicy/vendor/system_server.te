@@ -8,3 +8,6 @@ dontaudit system_server sysfs_msm_subsys:file r_file_perms;
 
 # Allow read fastcharge node
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+
+# Last kmsg
+allow system_server proc_last_kmsg:file r_file_perms;
