@@ -96,6 +96,7 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
 
 on property:sys.boot_completed=1
+    rm /data/unencrypted/zram_swap
 
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.zram
