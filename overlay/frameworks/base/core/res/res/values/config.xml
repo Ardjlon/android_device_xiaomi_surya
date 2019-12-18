@@ -658,4 +658,7 @@
          your device's memory use without going to the point of causing applications to turn
          off features. -->
     <bool name="config_avoidGfxAccel">true</bool>
+
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
 </resources>
