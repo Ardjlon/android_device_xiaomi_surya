@@ -30,6 +30,7 @@ persist.vendor.dpm.feature=11
 
 # IORap
 iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
 
 # Media
 media.aac_51_output_enabled=true
