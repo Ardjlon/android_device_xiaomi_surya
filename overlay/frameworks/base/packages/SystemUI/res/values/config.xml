@@ -33,4 +33,9 @@
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        wifi,bt,flashlight,cell,airplane,night,location,theme,heads_up,hotspot,gaming
+    </string>
 </resources>
