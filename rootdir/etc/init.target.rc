@@ -114,7 +114,7 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 85
     write /proc/sys/kernel/sched_group_upmigrate 100
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
     write /proc/sys/kernel/sched_child_runs_first 1
     write /proc/sys/kernel/sched_tunable_scaling 1
     write /proc/sys/kernel/sched_boost 0
