@@ -652,4 +652,7 @@
 
     <!-- Set the default dialer package name. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
+
+    <!-- Whether device has smaller dot/u/u notch -->
+    <bool name="config_haveDotNotch">true</bool>
 </resources>
