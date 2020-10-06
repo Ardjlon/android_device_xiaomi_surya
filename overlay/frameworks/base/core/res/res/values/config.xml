@@ -655,4 +655,7 @@
 
     <!-- Whether device has smaller dot/u/u notch -->
     <bool name="config_haveDotNotch">true</bool>
+
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">false</bool>
 </resources>
