@@ -39,4 +39,7 @@
 
     <!-- Enable vibrate for calls by default -->
     <bool name="def_vibrate_when_ringing">true</bool>
+
+    <!-- Comma-separated list of bluetooth, wifi, and cell. -->
+    <string name="def_airplane_mode_radios" translatable="false">cell</string>
 </resources>
