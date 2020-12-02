@@ -124,6 +124,9 @@ TARGET_KERNEL_CLANG_VERSION := 14
 TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
