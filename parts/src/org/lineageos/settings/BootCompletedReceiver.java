@@ -43,6 +43,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DozeUtils.checkDozeService(context);
         ThermalUtils.startService(context);
         HapticUtils.restoreLevel(context);
-        KcalUtils.writeCurrentSettings(sharedPrefs);
+        if (KcalUtils.isKcalSupported())
+            KcalUtils.writeCurrentSettings(sharedPrefs);
     }
 }
