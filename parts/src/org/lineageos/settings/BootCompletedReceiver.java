@@ -43,7 +43,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DiracUtils.initialize(context);
 
         // KCAL
-        KcalUtils.writeCurrentSettings(sharedPrefs);
+        if (KcalUtils.isKcalSupported())
+            KcalUtils.writeCurrentSettings(sharedPrefs);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
