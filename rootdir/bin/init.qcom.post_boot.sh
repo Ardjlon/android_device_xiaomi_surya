@@ -29,28 +29,6 @@
 
 target=`getprop ro.board.platform`
 
-function enable_swap() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    SWAP_ENABLE_THRESHOLD=1048576
-    swap_enable=`getprop ro.vendor.qti.config.swap`
-
-    # Enable swap initially only for 1 GB targets
-    if [ "$MemTotal" -le "$SWAP_ENABLE_THRESHOLD" ] && [ "$swap_enable" == "true" ]; then
-        # Static swiftness
-        echo 1 > /proc/sys/vm/swap_ratio_enable
-        echo 70 > /proc/sys/vm/swap_ratio
-
-        # Swap disk - 200MB size
-        if [ ! -f /data/vendor/swap/swapfile ]; then
-            dd if=/dev/zero of=/data/vendor/swap/swapfile bs=1m count=200
-        fi
-        mkswap /data/vendor/swap/swapfile
-        swapon /data/vendor/swap/swapfile -p 32758
-    fi
-}
-
 function configure_read_ahead_kb_values() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
@@ -124,7 +102,6 @@ function configure_memory_parameters() {
 
     echo 1 > /proc/sys/vm/watermark_scale_factor
     configure_read_ahead_kb_values
-    enable_swap
 }
 
 if [ -f /sys/devices/soc0/soc_id ]; then
@@ -219,9 +196,6 @@ case "$soc_id" in
             echo 10 > $latfloor/polling_interval
         done
     done
-
-    # Turn off scheduler boost at the end
-    echo 0 > /proc/sys/kernel/sched_boost
     ;;
 esac
 
@@ -328,9 +302,6 @@ case "$soc_id" in
             echo 10 > $latfloor/polling_interval
         done
     done
-
-    # Turn off scheduler boost at the end
-    echo 0 > /proc/sys/kernel/sched_boost
     ;;
 esac
 
