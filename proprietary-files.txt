@@ -324,6 +324,10 @@ vendor/firmware/CAMERA_ICP.elf|4eccbb6081b3171414e838f62f7d7936b8181594
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so|3fdb131775f3daeb72df27e4f327227f33e10c68
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|e90855d38e25b174be097fc25d614ca767ab2c06
 
+# Camera provider
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
 # Camera sensors
 vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so|3f3d8373dfef7897a144674d2bbc18ff90c8acac
 vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so|aba4ee0b17ed289cf08653acfd32df867f2ab9bb
