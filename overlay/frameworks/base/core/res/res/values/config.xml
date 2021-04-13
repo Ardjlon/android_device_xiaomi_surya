@@ -665,4 +665,7 @@
         <item>20</item>
         <item>30</item>
     </integer-array>
+
+    <!-- Whether device has fingerprint on power button -->
+    <bool name="config_powerButtonFingerprint">true</bool>
 </resources>
