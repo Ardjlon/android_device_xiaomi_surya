@@ -88,8 +88,6 @@ case "$target" in
     echo 3f > /proc/irq/default_smp_affinity
 
     # Setting b.L scheduler parameters
-    echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
-    echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
     echo 85 > /proc/sys/kernel/sched_downmigrate
     echo 95 > /proc/sys/kernel/sched_upmigrate
 
