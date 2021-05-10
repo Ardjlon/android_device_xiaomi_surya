@@ -80,6 +80,21 @@ void set_device_props(const string brand, const string device,
     }
 }
 
+void set_device_fp() {
+    // list of partitions to override props
+    string source_partitions[] = { "", "bootimage", "odm.", "product.",
+                                   "system", "system_ext.", "vendor." };
+
+    string fp = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
+    string desc = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+
+    for (const string &source : source_partitions) {
+        set_ro_build_prop(source, "fingerprint", fp, false);
+        set_ro_build_prop(source, "description", desc, false);
+    }
+}
+
+
 void load_dalvik_properties() {
     struct sysinfo sys;
 
@@ -117,4 +132,5 @@ void vendor_load_properties()
     }
 
     load_dalvik_properties();
+    set_device_fp();
 }
