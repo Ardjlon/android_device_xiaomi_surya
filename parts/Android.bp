@@ -1,0 +1,36 @@
+android_app {
+    name: "XiaomiParts",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    resource_dirs: ["res"],
+    srcs: ["src/**/*.java"],
+
+    manifest: "AndroidManifest.xml",
+
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "org.lineageos.settings.resources",
+    ],
+
+    required: [
+        "privapp-permissions-parts"
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-parts",
+    sub_dir: "permissions",
+    src: "privapp-permissions-parts.xml",
+    filename_from_src: true,
+}
