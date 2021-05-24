@@ -99,10 +99,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
 
-    # Kill core_ctl
-    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/disable 1
-
     # Set the default IRQ affinity to the silver cluster. When a
     # CPU is isolated/hotplugged, the IRQ affinity is adjusted
     # to one of the CPU from the default IRQ affinity mask.
