@@ -820,21 +820,19 @@ vendor/lib64/unnhal-acc-hvx.so|70db9e87b20e074e0466fdc2c8513547e01cbff7
 vendor/lib/libpn553_fw.so
 
 # Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-util.so
 
 # Peripheral manager - from LA.UM.9.1.r1-09100-SMxxx0.0
 vendor/bin/pm-proxy|dd13e8b611876af819065a9c3a2dfc1ed5b4fae7
@@ -1157,8 +1155,8 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
+vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalfeature.so
 
 # Time - from LA.UM.9.1.r1-09100-SMxxx0.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e

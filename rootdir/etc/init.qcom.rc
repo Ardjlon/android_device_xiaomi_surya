@@ -146,6 +146,7 @@ on boot
     enable vendor.qcrild2
     enable vendor.dataqti
     enable vendor.dataadpl
+    start mi_thermald
 
 on post-fs-data
     # Create directory used by display clients
