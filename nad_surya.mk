@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 NAD_BUILD_TYPE := OFFICIAL
+TARGET_USES_BLUR := true
 
 # Device identifier
 PRODUCT_NAME := nad_surya
