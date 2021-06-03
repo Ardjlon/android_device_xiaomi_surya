@@ -1,0 +1,1 @@
+allow system_server surfaceflinger_exec:file r_file_perms;
