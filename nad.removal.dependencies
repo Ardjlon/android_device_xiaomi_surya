@@ -1,0 +1,20 @@
+[
+  {
+    "remote":"lineage",
+    "repository":"android_hardware_qcom_display",
+    "target_path":"hardware/qcom-caf/sm8150/display",
+    "branch":"lineage-18.1-caf-sm8150"
+  },
+  {
+    "remote":"lineage",
+    "repository":"android_hardware_qcom_audio",
+    "target_path":"hardware/qcom-caf/sm8150/audio",
+    "branch":"lineage-18.1-caf-sm8150"
+  },
+  {
+    "remote":"lineage",
+    "repository":"android_hardware_qcom_media",
+    "target_path":"hardware/qcom-caf/sm8150/media",
+    "branch":"lineage-18.1-caf-sm8150"
+  }
+]
