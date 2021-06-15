@@ -316,6 +316,11 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
+on property:vendor.post_boot.parsed=1
+    # Adaptive charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
