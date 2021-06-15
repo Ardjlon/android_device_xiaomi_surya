@@ -39,7 +39,7 @@
             android:key="kcal_rgb_preference_category"
             android:title="@string/kcal_rgb_preference_category_title">
 
-        <SeekBarPreference
+        <org.lineageos.settings.color.model.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
             android:layout_height="10dp"
@@ -47,7 +47,7 @@
             android:key="red_slider"
             android:max="256" />
 
-        <SeekBarPreference
+        <org.lineageos.settings.color.model.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
             android:layout_height="10dp"
@@ -55,7 +55,7 @@
             android:key="green_slider"
             android:max="256" />
 
-        <SeekBarPreference
+        <org.lineageos.settings.color.model.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
             android:layout_height="10dp"
@@ -68,14 +68,14 @@
         android:key="kcal_calibration_preference_category"
         android:title="@string/kcal_calibration_preference_category_title">
 
-        <SeekBarPreference
+        <org.lineageos.settings.color.model.KcalSeekBarPreference
             android:defaultValue="255"
             android:dependency="kcal_enable"
             android:layout_height="10dp"
             android:key="saturation_slider"
             android:max="383"
             android:title="@string/saturation_slider_title" />
-        <SeekBarPreference
+        <org.lineageos.settings.color.model.KcalSeekBarPreference
             android:defaultValue="255"
             android:dependency="kcal_enable"
             android:layout_height="10dp"
