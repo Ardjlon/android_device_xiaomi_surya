@@ -41,11 +41,6 @@ public class KcalSettingsFragment extends PreferenceFragment implements
     private SharedPreferences mSharedPrefs;
 
     private SwitchPreference mKcalSwitchPreference;
-    private SeekBarPreference mRedColorSlider;
-    private SeekBarPreference mGreenColorSlider;
-    private SeekBarPreference mBlueColorSlider;
-    private SeekBarPreference mSaturationSlider;
-    private SeekBarPreference mContrastSlider;
     private Preference mResetButton;
 
     @Override
@@ -71,30 +66,8 @@ public class KcalSettingsFragment extends PreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        switch (preference.getKey()){
-            case "kcal_enable":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, (Boolean) newValue ? 1 : 0);
-                break;
-            case "red_slider":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, (Integer) newValue);
-                mRedColorSlider.setSummary(String.valueOf(newValue));
-                break;
-            case "green_slider":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 2, (Integer) newValue);
-                mGreenColorSlider.setSummary(String.valueOf(newValue));
-                break;
-            case "blue_slider":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 3, (Integer) newValue);
-                mBlueColorSlider.setSummary(String.valueOf(newValue));
-                break;
-            case "saturation_slider":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_SATURATION_NODE, 0, (Integer) newValue);
-                mSaturationSlider.setSummary(String.valueOf(newValue));
-                break;
-            case "contrast_slider":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_CONTRAST_NODE, 0, (Integer) newValue);
-                mContrastSlider.setSummary(String.valueOf(newValue));
-                break;
+        if (preference.getKey().equals("kcal_enable")) {
+            KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, (Boolean) newValue ? 1 : 0);
         }
         return true;
     }
@@ -121,32 +94,5 @@ public class KcalSettingsFragment extends PreferenceFragment implements
                 return true;
             }
         });
-
-
-        mRedColorSlider = (SeekBarPreference) findPreference("red_slider");
-        configureSlider(mRedColorSlider, this);
-
-        mGreenColorSlider = (SeekBarPreference) findPreference("green_slider");
-        configureSlider(mGreenColorSlider, this);
-
-        mBlueColorSlider = (SeekBarPreference) findPreference("blue_slider");
-        configureSlider(mBlueColorSlider, this);
-
-        mSaturationSlider = (SeekBarPreference) findPreference("saturation_slider");
-        configureSlider(mSaturationSlider, this);
-        mSaturationSlider.setMin(224);
-
-        mContrastSlider = (SeekBarPreference) findPreference("contrast_slider");
-        configureSlider(mContrastSlider, this);
-        mContrastSlider.setMin(224);
-    }
-
-
-    // Configure the given SeekBarPreference with the given configuration
-    private void configureSlider(SeekBarPreference slider, OnPreferenceChangeListener listener) {
-        slider.setOnPreferenceChangeListener(listener);
-        slider.setSummary(String.valueOf(slider.getValue()));
-        slider.setUpdatesContinuously(true);
-        slider.setMin(1);
     }
 }
