@@ -27,6 +27,14 @@ public final class KcalUtils {
     public static final String KCAL_SATURATION_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_sat";
     public static final String KCAL_CONTRAST_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_cont";
 
+    private static final String[] COLOR_PROFILE_SETTINGS = {"red", "green", "blue", "saturation", "contrast"};
+
+    private static final int[][] COLOR_PROFILES_VALUES = {
+        {256, 256, 256, 255, 255}, // Default
+        {240, 240, 256, -1, -1}, // Cold
+        {256, 256, 240, -1, -1}, // Warm
+        {-1, -1, -1, 265, -1}}; // Saturated
+
     // Write the given value to the given position on the KCAL node
     // position 0 is the full node, so the function will write the value to the node without following a pattern
     // position 1 is RED
@@ -100,6 +108,25 @@ public final class KcalUtils {
                  return 224;
              default:
                  return 1;
+        }
+    }
+
+    public static void setColorProfile(int profileIndex, SharedPreferences sharedPrefs) {
+        try {
+            int[] profileSettings = COLOR_PROFILES_VALUES[profileIndex];
+            if (profileSettings.length != COLOR_PROFILE_SETTINGS.length) {
+                return;
+            }
+
+            for (int i = 0; i < profileSettings.length; i++) {
+                if (profileSettings[i] != -1) {
+                    sharedPrefs.edit().putInt(COLOR_PROFILE_SETTINGS[i] + "_slider", profileSettings[i]).apply();
+                }
+            }
+
+            writeCurrentSettings(sharedPrefs);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
     }
 }
