@@ -29,6 +29,13 @@
             android:key="kcal_enable"
             android:summary="@string/kcal_enable_summary"
             android:title="@string/kcal_enable_title" />
+
+    	<Preference
+            android:key="color_profiles"
+            android:title="@string/color_profiles"
+            android:dependency="kcal_enable"
+            android:icon="@drawable/ic_color_picker" />
+
         <Preference
             android:icon="@drawable/ic_reset"
             android:key="reset_default_button"
