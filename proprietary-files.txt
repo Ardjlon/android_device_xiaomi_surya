@@ -794,19 +794,21 @@ vendor/lib64/unnhal-acc-hvx.so|c0892ac04f9c3cb9bb25e240ff22ced3522c31e0
 vendor/lib/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
 
 # Perf - from surya
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|98654005d78109d44fc1b53a41803184dd35939a
-vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
-vendor/lib/libperfconfig.so|8c9e4923dc35c383e16aabcd20b10967bd823999
-vendor/lib/libperfgluelayer.so|d9729eff2b6da7a3b65f6f985cf77dbec0dab6a3
-vendor/lib/libqti-perfd-client.so|5d3e9fff53cef7e077996311205c74963fce54c3
-vendor/lib/libqti-perfd.so|478d8b235f30587574206ebfa782bc62c08314d2
-vendor/lib/libqti-util.so|72cc63fd039cf4aa7c6b62f53a1f2e4bada05f42
-vendor/lib64/libperfconfig.so|7fecdca5becc31bf0298bc21e026c13da5831c8b
-vendor/lib64/libperfgluelayer.so|0bf84cafdc9922ad5b40d2a4aca05bd4fcd637be
-vendor/lib64/libqti-perfd-client.so|7089fa216b06fc78127b51df6cade6518886a463
-vendor/lib64/libqti-perfd.so|e3d355239ba7e5b56cb78fbd7c543da7e809c392
-vendor/lib64/libqti-util.so|45a80be449435d277f09cc59e4a315fa86072c41
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|88fea0e630507d28e0cf994b0a08d1284b544ae0
+vendor/bin/msm_irqbalance|bcc114819bd50bfbefe2dfcb9f815f9959cdad44
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/lib64/libperfconfig.so|a6417bae7c270aa55746c21fa553f8638e2646e7
+vendor/lib64/libperfgluelayer.so|ab07f0a6ded333726a9c5ae37a38dc91881fa11e
+vendor/lib64/libperfioctl.so|971d8108b9a6d5854be68792dc19a16c37734f59
+vendor/lib64/libqti-perfd-client.so|b6881ca5b77335490bd91c6803feb5d31cbf8e92
+vendor/lib64/libqti-perfd.so|31cb7446a5a1e30b0416f388ebc8bfc3f3223e6e
+vendor/lib64/libqti-util.so|e7e1db6dbd6cfe955a849e758faea6433e3491a1
+vendor/lib/libperfconfig.so|e51ef56d45b31fe22255140c36c62d5f26932658
+vendor/lib/libperfgluelayer.so|3334930730e67c07afc1b92029c9890ea37b7aa4
+vendor/lib/libperfioctl.so|63f04b528f33a86ea5bf1f1e322f40a54ccc83b0
+vendor/lib/libqti-perfd-client.so|64962dd4d5e8b7fd11927c70778f79ea1cd140dd
+vendor/lib/libqti-perfd.so|2be89db2f47d7c3fd55b845f02ce5caa41ea5db4
+vendor/lib/libqti-util.so|aad9fa70224a7d0c806790e4a274f3a86cd84316
 
 # Peripheral - from LA.UM.9.1.r1-09600-SMxxx0.0
 vendor/bin/pm-proxy|c36785c811db9af0d6d938cdbc6b90dedaaf706e
