@@ -129,7 +129,6 @@ public class DozeSettingsFragment extends PreferenceFragment
             DozeUtils.enableAlwaysOn(getActivity(), (Boolean) newValue);
             if (!(Boolean) newValue) {
                 mDozeBrightnessPreference.setValue(DozeUtils.DOZE_BRIGHTNESS_LBM);
-                DozeUtils.setDozeMode(DozeUtils.DOZE_BRIGHTNESS_LBM);
             } else {
                 mPickUpPreference.setChecked(false);
                 mHandwavePreference.setChecked(false);
@@ -139,6 +138,17 @@ public class DozeSettingsFragment extends PreferenceFragment
         } else if (DozeUtils.DOZE_BRIGHTNESS_KEY.equals(preference.getKey())) {
             if (!DozeUtils.DOZE_BRIGHTNESS_AUTO.equals((String) newValue)) {
                 DozeUtils.setDozeMode((String) newValue);
+            }
+            switch ((String) newValue) {
+                case DozeUtils.DOZE_BRIGHTNESS_LBM:
+                    mDozeBrightnessPreference.setIcon(R.drawable.ic_doze_brightness_low);
+                    break;
+                case DozeUtils.DOZE_BRIGHTNESS_HBM:
+                    mDozeBrightnessPreference.setIcon(R.drawable.ic_doze_brightness_high);
+                    break;
+                case DozeUtils.DOZE_BRIGHTNESS_AUTO:
+                    mDozeBrightnessPreference.setIcon(R.drawable.ic_doze_brightness_auto);
+                    break;
             }
         }
 
@@ -161,7 +171,6 @@ public class DozeSettingsFragment extends PreferenceFragment
             DozeUtils.enableAlwaysOn(getActivity(), false);
             mAlwaysOnDisplayPreference.setChecked(false);
             mDozeBrightnessPreference.setValue(DozeUtils.DOZE_BRIGHTNESS_LBM);
-            DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
             mPickUpPreference.setChecked(false);
             mHandwavePreference.setChecked(false);
             mPocketPreference.setChecked(false);

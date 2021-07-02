@@ -37,6 +37,9 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.settings.R;
 import org.lineageos.settings.utils.FileUtils;
 
+import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
+import static android.provider.Settings.Secure.DOZE_ENABLED;
+
 public final class DozeUtils {
     private static final String TAG = "DozeUtils";
     private static final boolean DEBUG = false;
@@ -54,20 +57,14 @@ public final class DozeUtils {
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
 
-    protected static final String DOZE_MODE_PATH =
+    private static final String DOZE_MODE_PATH =
             "/sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode";
     protected static final String DOZE_MODE_HBM = "1";
     protected static final String DOZE_MODE_LBM = "0";
 
-    private static final String DOZE_STATUS_PATH =
-            "/sys/devices/platform/soc/soc:qcom,dsi-display/doze_status";
-    protected static final String DOZE_STATUS_ENABLED = "1";
-    protected static final String DOZE_STATUS_DISABLED = "0";
-
     protected static final String DOZE_BRIGHTNESS_LBM = "0";
     protected static final String DOZE_BRIGHTNESS_HBM = "1";
-    protected static final String DOZE_BRIGHTNESS_DARK = "2";
-    protected static final String DOZE_BRIGHTNESS_AUTO = "3";
+    protected static final String DOZE_BRIGHTNESS_AUTO = "2";
 
     public static void onBootCompleted(Context context) {
         checkDozeService(context);
@@ -86,7 +83,9 @@ public final class DozeUtils {
     }
 
     public static void checkDozeService(Context context) {
-        if (isDozeEnabled(context) && (isAlwaysOnEnabled(context) || sensorsEnabled(context))) {
+        if (isDozeEnabled(context)
+                && (!isAlwaysOnEnabled(context) || isDozeAutoBrightnessEnabled(context))
+                && sensorsEnabled(context)) {
             startService(context);
         } else {
             stopService(context);
@@ -155,10 +154,6 @@ public final class DozeUtils {
 
     protected static boolean setDozeMode(String value) {
         return FileUtils.writeLine(DOZE_MODE_PATH, value);
-    }
-
-    protected static boolean setDozeStatus(String value) {
-        return FileUtils.writeLine(DOZE_STATUS_PATH, value);
     }
 
     protected static boolean isDozeAutoBrightnessEnabled(Context context) {
