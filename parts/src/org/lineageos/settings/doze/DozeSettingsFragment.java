@@ -120,7 +120,6 @@ public class DozeSettingsFragment extends PreferenceFragment
             mWakeOnGesturePreference.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
             pickupSensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
             proximitySensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
-            DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
         }
     }
 
