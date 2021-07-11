@@ -18,8 +18,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 vendor.camera.aux.packagelist2=com.google.android.GoogleCamera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.android.camera
 
-# Charger
+# Battery Property
 ro.charger.enable_suspend=true
+persist.vendor.quick.charge=1
 
 # CNE
 persist.vendor.cne.feature=1
