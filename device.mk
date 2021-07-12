@@ -7,6 +7,14 @@
 # Inherit the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Force disable updating of APEXes when flatten APEX flag is enabled
+ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
+PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
+endif
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \
