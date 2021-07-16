@@ -423,6 +423,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
+# RCS
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
