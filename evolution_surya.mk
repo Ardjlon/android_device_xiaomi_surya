@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Wave-OS
+# Copyright (C) 2021 Evolution
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,21 +16,22 @@
 
 # Inherit framework first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit from common Evolution X configuration
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common Nusantara configuration
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-NAD_BUILD_TYPE := OFFICIAL
-TARGET_USES_BLUR := true
-
 # Device identifier
-PRODUCT_NAME := nad_surya
+PRODUCT_NAME := evolution_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Target
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
