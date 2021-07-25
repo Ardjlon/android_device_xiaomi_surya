@@ -1086,7 +1086,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|f98b5eef4e9851ee4ff9546685e9c2fc2b
 
 # Thermal
 vendor/bin/mi_thermald
-vendor/bin/thermal-engine
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
