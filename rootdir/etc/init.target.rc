@@ -54,12 +54,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
-service mi_thermald /system/vendor/bin/mi_thermald
-    class core
-    user root
-    group system
-    seclabel u:r:mi_thermald:s0
-
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
@@ -138,3 +132,9 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
+
+service mi_thermald /system/vendor/bin/mi_thermald
+    class core
+    user root
+    group system
+    seclabel u:r:mi_thermald:s0
