@@ -1,3 +1,8 @@
-dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
+allow gmscore_app adbd_prop:file { getattr open };
+allow gmscore_app apexd_prop:file { getattr open };
+allow gmscore_app apk_verity_prop:file { getattr open };
+allow gmscore_app hal_memtrack_default:binder call;
+allow gmscore_app exported_camera_prop:file read; 
 
-dontaudit gmscore_app hal_memtrack_hwservice:binder {call};
+allow gmscore_app system_data_file:file r_file_perms;
+allow gmscore_app system_data_file:dir r_dir_perms;
