@@ -9,26 +9,25 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.0-impl
-
-PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@6.0-impl:32 \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@6.0-impl:32 \
     audio.a2dp.default \
-    audio.bluetooth.default \
+    audio.primary.sm6150:32 \
+    audio.r_submix.default \
     audio.usb.default \
-    audio.r_submix.default
-
-PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libaudio-resampler \
+    libhdmiedid \
+    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
     libtinycompress \
+    libtinycompress.vendor \
     libvolumelistener
-
-PRODUCT_PACKAGES += \
-    libaudio-resampler
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -53,8 +52,8 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0-impl:32 \
+    audio.bluetooth.default \
     libbtconfigstore \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
