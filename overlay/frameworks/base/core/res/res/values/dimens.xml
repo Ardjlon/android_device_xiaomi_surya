@@ -40,4 +40,7 @@
         rounded_corner_radius to more accurately provide a "radius" for the rounded corner. -->
     <dimen name="rounded_corner_radius_adjustment">19px</dimen>
 
+    <!-- Total height of QQS (quick_qs_offset_height + 128) -->
+    <dimen name="quick_qs_total_height">236dp</dimen>
+
 </resources>
