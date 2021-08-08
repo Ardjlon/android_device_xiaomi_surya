@@ -1,2 +1,5 @@
 # Notch
 get_prop(platform_app, vendor_display_notch_prop)
+
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_dms_default)
