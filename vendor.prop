@@ -170,6 +170,7 @@ vendor.display.disable_idle_time_video=1
 vendor.display.idle_time=1100
 vendor.display.skip_refresh_rate_change=1
 vendor.gralloc.disable_ubwc=0
+vendor.display.update_vsync_on_doze=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
