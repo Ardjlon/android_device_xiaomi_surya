@@ -173,7 +173,6 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_inline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.disable_ui_3d_tonemap=1
-vendor.display.enable_default_color_mode=1
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.display.disable_idle_time_hdr=1
@@ -181,6 +180,7 @@ vendor.display.disable_idle_time_video=1
 vendor.display.idle_time=1100
 vendor.gralloc.disable_ubwc=0
 vendor.display.update_vsync_on_doze=1
+vendor.display.video_mode_panel=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
