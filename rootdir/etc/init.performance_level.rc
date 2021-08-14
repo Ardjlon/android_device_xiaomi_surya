@@ -13,30 +13,50 @@
 # limitations under the License.
 #
 
+on property:sys.performance.level=-1
+    chmod 644 /sys/class/thermal/thermal_message/sconfig
+    write /sys/class/thermal/thermal_message/sconfig 0
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 0
+
 on property:sys.performance.level=0
     chmod 644 /sys/class/thermal/thermal_message/sconfig
     write /sys/class/thermal/thermal_message/sconfig 0
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 0
 
 on property:sys.performance.level=1
     chmod 644 /sys/class/thermal/thermal_message/sconfig
     write /sys/class/thermal/thermal_message/sconfig 12
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 0
 
 on property:sys.performance.level=2
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 14
+    write /sys/class/thermal/thermal_message/sconfig 8
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 0
 
 on property:sys.performance.level=3
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 14
+    write /sys/class/thermal/thermal_message/sconfig 8
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 1
 
 on property:sys.performance.level=4
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 9
+    write /sys/class/thermal/thermal_message/sconfig 10
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 1
 
 on property:sys.performance.level=5
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 9
+    write /sys/class/thermal/thermal_message/sconfig 13
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 2
 
 on property:sys.performance.level=6
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
+    write /sys/class/thermal/thermal_message/sconfig 13
+    chmod 644 /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
+    write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost 3
