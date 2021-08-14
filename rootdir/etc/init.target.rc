@@ -42,12 +42,16 @@ on init
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
 on fs
+    start hwservicemanager
+    start servicemanager
+
     mount_all --early /vendor/etc/fstab.qcom
 
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
+
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
