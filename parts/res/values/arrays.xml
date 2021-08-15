@@ -123,4 +123,31 @@
         <item>"3,3,1,-3,-3,0,0"</item>
         <item>"0,0,-1,-4,-4,5,4"</item>
     </string-array>
+    
+    <string-array name="lcd_hbm_modes" translatable="false">
+        <item>"Off"</item>
+        <item>"Medium"</item>
+        <item>"High"</item>
+    </string-array>
+    
+    <string-array name="lcd_hbm_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+    
+    <string-array name="lcd_cabc_modes" translatable="false">
+        <item>"Off"</item>
+        <item>"Low (UI)"</item>
+        <item>"Medium (Videos)"</item>
+        <item>"High (Images)"</item>
+    </string-array>
+    
+    <string-array name="lcd_cabc_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+    </string-array>
+    
 </resources>
