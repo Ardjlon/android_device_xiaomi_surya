@@ -21,9 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # OPLauncher
 $(call inherit-product, vendor/oplauncher/OPLauncher.mk)
 
-# ANX Camera
-$(call inherit-product, vendor/ANXCamera/config.mk)
-
 # Inherit from common Evolution X configuration
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 

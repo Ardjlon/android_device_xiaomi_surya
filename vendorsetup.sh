@@ -19,6 +19,3 @@ git clone https://github.com/Ardjlon/vendor_OnePlusLauncher vendor/oplauncher
 # Display Hals
 git -C hardware/qcom-caf/sm8150/display remote add pixel https://github.com/PixelExperience/hardware_qcom-caf_sm8150_display
 git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/sm8150/display checkout pixel/eleven
-
-#ANX
-git clone https://github.com/LOSMod/vendor_ANXCamera vendor/ANXCamera

@@ -28,8 +28,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 	NexusLauncherPrebuilt \
 	NexusLauncherRelease \
 	WallpaperPicker2 \
-	MusicFX \
-	Snap
+	MusicFX
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
