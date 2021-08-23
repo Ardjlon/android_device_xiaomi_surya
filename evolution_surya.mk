@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # OPLauncher
 $(call inherit-product, vendor/oplauncher/OPLauncher.mk)
 
+# Google Camera Parrot
+$(call inherit-product, vendor/GoogleCamera/GoogleCamera.mk)
+
 # Inherit from common Evolution X configuration
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
