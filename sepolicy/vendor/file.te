@@ -1,4 +1,2 @@
 type persist_subsys_file, vendor_persist_type, file_type;
 type proc_tp_gesture, fs_type, proc_type;
-# Kcal
-type kcal_dev, sysfs_type, fs_type;
