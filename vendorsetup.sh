@@ -1,5 +1,5 @@
 # Kernel
-git clone https://github.com/stormbreaker-project/kernel_xiaomi_surya  -b rebase-comm kernel/xiaomi/surya
+git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_surya/ -b dot11 kernel/xiaomi/surya
 
 # Proton
 git clone https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-13 --depth=1

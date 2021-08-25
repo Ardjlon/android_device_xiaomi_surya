@@ -103,7 +103,7 @@ BOARD_KERNEL_CMDLINE += kpti=off cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_KERNEL_CONFIG := surya-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 TARGET_KERNEL_CLANG_VERSION := 13
 TARGET_KERNEL_CLANG_COMPILE := true
