@@ -15,6 +15,9 @@ ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
 PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 endif
 
+# PocoParts
+$(call inherit-product, vendor/PocoParts/pocoparts.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \
