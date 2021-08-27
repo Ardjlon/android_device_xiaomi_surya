@@ -113,7 +113,6 @@ void vendor_load_properties()
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
     if (hwname == "karna") { // POCO X3 (India)
         set_device_props("POCO", "karna", "M2007J20CI", "karna_in");
-        property_override("ro.product.marketname", "POCO X3");
         property_override("ro.product.mod_device", "surya_in_global");
         property_override("ro.product.model", "M2007J20CI");
         property_override("ro.product.system.model", "qssi system image for arm64");
@@ -131,7 +130,6 @@ void vendor_load_properties()
         property_override("ro.build.description", "karna_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys");
     } else { // POCO X3 NFC
         set_device_props("POCO", "surya", "M2007J20CI", "surya_global");
-        property_override("ro.product.marketname", "POCO X3 NFC");
         property_override("ro.product.mod_device", "surya_global");
         property_override("ro.product.model", "M2007J20CI");
         property_override("ro.product.system.model", "qssi system image for arm64");
