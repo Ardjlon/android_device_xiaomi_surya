@@ -3,7 +3,6 @@
    Copyright (C) 2016 The CyanogenMod Project.
    Copyright (C) 2019-2020 The LineageOS Project.
    Copyright (C) 2021 WaveOS.
-   Copyright (C) 2021 Evolution X.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -81,6 +80,21 @@ void set_device_props(const string brand, const string device,
     }
 }
 
+void set_device_fp() {
+    // list of partitions to override props
+    string source_partitions[] = { "", "bootimage", "odm.", "product.",
+                                   "system", "system_ext.", "vendor." };
+
+    string fp = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
+    string desc = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+
+    for (const string &source : source_partitions) {
+        set_ro_build_prop(source, "fingerprint", fp, false);
+        set_ro_build_prop(source, "description", desc, false);
+    }
+}
+
+
 void load_dalvik_properties() {
     struct sysinfo sys;
 
@@ -109,46 +123,17 @@ void vendor_load_properties()
     /*
      * Detect device and configure properties
      */
-    std::string region = GetProperty("ro.boot.hwc", "");
-    std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
-    if (hwname == "karna") { // POCO X3 (India)
+    if (GetProperty("ro.boot.hwname", "") == "karna") { // POCO X3 (India)
         set_device_props("POCO", "karna", "M2007J20CI", "karna_in");
         property_override("ro.product.mod_device", "surya_in_global");
-        property_override("ro.product.model", "M2007J20CI");
-        property_override("ro.product.system.model", "qssi system image for arm64");
-        property_override("ro.product.vendor.model", "M2007J20CI");
-        property_override("ro.product.product.model", "qssi system image for arm64");
-        property_override("ro.product.odm.model", "M2007J20CI");
-        property_override("ro.product.system_ext.model", "qssi system image for arm64");
-        property_override("ro.product.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.system_ext.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.system.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.vendor.build.fingerprint", "POCO/karna_global/karna:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.bootimage.build.fingerprint", "POCO/karna_global/karna:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.odm.build.fingerprint", "POCO/karna_global/karna:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.build.fingerprint", "POCO/karna_global/karna:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.build.description", "karna_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys");
     } else { // POCO X3 NFC
-        set_device_props("POCO", "surya", "M2007J20CI", "surya_global");
+        set_device_props("POCO", "surya", "M2007J20CG", "surya_global");
         property_override("ro.product.mod_device", "surya_global");
-        property_override("ro.product.model", "M2007J20CI");
-        property_override("ro.product.system.model", "qssi system image for arm64");
-        property_override("ro.product.vendor.model", "M2007J20CI");
-        property_override("ro.product.product.model", "qssi system image for arm64");
-        property_override("ro.product.odm.model", "M2007J20CI");
-        property_override("ro.product.system_ext.model", "qssi system image for arm64");
-        property_override("ro.product.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.system_ext.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.system.build.fingerprint", "qti/qssi/qssi:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.vendor.build.fingerprint", "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.bootimage.build.fingerprint", "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.odm.build.fingerprint", "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.build.fingerprint", "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys");
-        property_override("ro.build.description", "surya_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys");
     }
 
     load_dalvik_properties();
     //Safetynet workarounds
+    set_device_fp();
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.boot.verifiedbootstate", "green");
 
