@@ -14,7 +14,8 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=cherokee
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.google.android.GoogleCamera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.google.android.GoogleCameraEng
+vendor.camera.aux.packagelist2=com.google.android.GoogleCamera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.android.camera
 
 # Charger
