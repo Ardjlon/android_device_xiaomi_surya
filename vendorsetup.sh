@@ -22,3 +22,6 @@ git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/
 
 # Google Camera Parrot
 git clone https://github.com/ririxichan/vendor_GoogleCamera vendor/GoogleCamera
+
+# Poco Parts
+git clone https://github.com/dotOS-Devices/vendor_PocoParts -b dot11 vendor/PocoParts
