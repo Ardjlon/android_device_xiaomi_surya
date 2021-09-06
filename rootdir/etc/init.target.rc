@@ -139,3 +139,9 @@ service mi_thermald /system/vendor/bin/mi_thermald
     user root
     group system
     seclabel u:r:mi_thermald:s0
+
+service vendor.adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
