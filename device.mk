@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # Camera
 PRODUCT_PACKAGES += \
     libshim_megvii
