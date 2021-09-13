@@ -2,6 +2,7 @@
 # Copyright (C) 2021 Paranoid Android
 #           (C) 2021 WaveOS
 #           (C) 2021 Nusantara Project
+#           (C) 2021 Corvus OS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -111,6 +112,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version 2
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+ifeq ($(PERM_BUILD), true)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
 
 # Media
 TARGET_USES_ION := true
