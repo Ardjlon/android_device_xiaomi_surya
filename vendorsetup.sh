@@ -21,3 +21,6 @@ git clone https://github.com/ririxichan/vendor_GoogleCamera vendor/GoogleCamera
 # EVA GCC
 git clone --depth=1 https://github.com/mvaisakh/gcc-arm64 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 git clone --depth=1 https://github.com/mvaisakh/gcc-arm prebuilts/gcc/linux-x86/arm/arm-eabi
+
+# PocoParts
+git clone git@github.com:Ardjlon/vendor_PocoParts.git -b elle vendor/PocoParts
