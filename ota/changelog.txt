@@ -1,1 +1,59 @@
-Initial OTA tests
+DEVICE SIDE:
+
+OTA update support
+
+Update kernel to StormBreaker X7
+
+Exact battery capacity value in Settings
+
+Enable adaptive charging
+
+SOURCE ROM
+
+9/19
+
+FOD: Adjust A12 FP icon stroke color
+
+
+9/18
+
+Evolver: Move rounded corners back to Themes category
+
+Evolver: Remove toggle to disable charging animation
+
+Evolver: Reorganize and add dividers
+
+Settings: Add resource network_5G_lte support
+
+Settings: Combine Double Tap settings into a single fragment
+
+Settings: Enable NetworkScan for 5G SA
+
+Settings: make navbar visibility tweaks more distinct
+
+
+9/16
+
+GestureNavigationSettings: Fix default values
+
+SystemUI: Enable three icon switching within QS DND tile
+
+SystemUI: Unblock gestural navigation on clearScreenshot()
+
+TaskSnapshotController: avoid NPE
+
+base: use a double click effect for charging if there is no amplitude control support
+
+vendor: add OTA script to delete package cache
+
+
+9/15
+
+AndroidSClocks: Beautify it
+
+SystemUI: Change MediaPlayer margin to Android S style
+
+
+9/14
+
+SystemUI: Don't show charging animation if battery is charged
