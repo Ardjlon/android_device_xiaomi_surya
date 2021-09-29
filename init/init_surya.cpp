@@ -31,6 +31,7 @@
 
 #include <cstdlib>
 #include <string.h>
+#include <sys/sysinfo.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -61,7 +62,22 @@ void set_ro_build_prop(const string &source, const string &prop,
     else
         prop_name = "ro." + source + "build." + prop;
 
+
     property_override(prop_name.c_str(), value.c_str(), true);
+}
+
+void load_dalvik_properties() {
+    struct sysinfo sys;
+
+    sysinfo(&sys);
+        // dalvik heap config for 6/8 gb ram
+        // from - phone-xhdpi-6144-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "128m");
+        property_override("dalvik.vm.heapgrowthlimit", "512m");
+        property_override("dalvik.vm.heapsize", "512m");
+        property_override("dalvik.vm.heaptargetutilization", "0.1");
+        property_override("dalvik.vm.heapmaxfree", "8m");
+        property_override("dalvik.vm.heapminfree", "512k");
 }
 
 void set_device_props(const string brand, const string device,
@@ -101,4 +117,7 @@ void vendor_load_properties()
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+
+    // Dalvik properties
+    load_dalvik_properties();
 }
