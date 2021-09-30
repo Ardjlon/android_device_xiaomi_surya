@@ -133,6 +133,7 @@ vendor.audio.dolby.ds2.hardbypass=true
 
 # Display
 debug.egl.hw=0
+debug.hwui.renderer=skiagl
 debug.mdpcomp.logs=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=10500000
