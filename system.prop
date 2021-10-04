@@ -73,3 +73,6 @@ ro.support_one_handed_mode=true
 
 # support otg reverse charge
 persist.vendor.otg_control=true
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
