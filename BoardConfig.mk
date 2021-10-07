@@ -121,6 +121,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version 2
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
