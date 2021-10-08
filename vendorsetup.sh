@@ -1,5 +1,5 @@
 # Kernel
-git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_surya/ -b dot11 kernel/xiaomi/surya
+git clone git@github.com:stormbreaker-project/kernel_xiaomi_surya.git -b staging/main kernel/xiaomi/surya
 
 # Disable Realme partitions
 git -C build/tools fetch https://github.com/Evolution-X/build elle 75895232a2b045431589bcb31ed808cc86ebffa4
