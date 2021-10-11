@@ -22,6 +22,7 @@ ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.sfx.scenario=true
 ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.soundfx.type=mi
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -114,14 +115,6 @@ persist.vendor.cne.feature=1
 # Data modules
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
-
-# Dirac
-audio.dirac.logging=0
-ro.audio.soundfx.dirac=true
-persist.audio.dirac.speaker=true
-persist.dirac.acs.controller=qem
-persist.dirac.acs.storeSettings=1
-persist.dirac.acs.ignore_error=1
 
 # DPM
 persist.vendor.dpm.nsrm.bkg.evt=3955
