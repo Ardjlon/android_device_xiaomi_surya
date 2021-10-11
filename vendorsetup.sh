@@ -15,8 +15,8 @@ git clone https://github.com/Ardjlon/vendor_OnePlusLauncher vendor/oplauncher
 git -C hardware/qcom-caf/sm8150/display remote add pixel https://github.com/PixelExperience/hardware_qcom-caf_sm8150_display
 git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/sm8150/display checkout pixel/eleven
 
-# Google Camera Parrot
-git clone https://github.com/ririxichan/vendor_GoogleCamera vendor/GoogleCamera
+# Google Camera
+git clone git@github.com:Ardjlon/vendor_GoogleCamera.git vendor/GoogleCamera
 
 # EVA GCC
 git clone --depth=1 https://github.com/mvaisakh/gcc-arm64 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
