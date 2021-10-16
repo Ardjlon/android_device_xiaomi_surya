@@ -27,7 +27,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 PRODUCT_NAME := aosp_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X3 NFC
+PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
