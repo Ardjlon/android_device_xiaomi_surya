@@ -22,11 +22,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	obdm_stub \
 	Drive \
 	SafetyHubPrebuilt \
-	PixelLauncher \
-	NexusLauncherPrebuilt \
-	NexusLauncher \
-	NexusLauncherPrebuilt \
-	NexusLauncherRelease \
 	WallpaperPicker2 \
 	MusicFX \
         Snap
