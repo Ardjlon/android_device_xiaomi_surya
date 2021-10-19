@@ -17,6 +17,9 @@
 # Product launched with 10.0
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 2280
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -311,7 +314,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 

@@ -27,8 +27,6 @@
          Zone N + 1     array[N] <= LUX < infinity
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>2</item>
         <item>4</item>
         <item>7</item>
         <item>10</item>
@@ -71,8 +69,6 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>5</item>
-        <item>5</item>
         <item>10</item>
         <item>18</item>
         <item>36</item>
@@ -546,4 +542,17 @@
     -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -36 V 91 H 36 V 0 H 0 Z</string>
 
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 </resources>
