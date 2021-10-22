@@ -132,6 +132,7 @@ persist.dirac.acs.storeSettings=1
 persist.dirac.acs.ignore_error=1
 
 # Display
+debug.sdm.support_writeback=0
 debug.egl.hw=0
 debug.hwui.renderer=skiagl
 debug.mdpcomp.logs=0
