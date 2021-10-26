@@ -1162,7 +1162,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|f98b5eef4e9851ee4ff9546685e9c2fc2b
 
 # Thermal - from surya
 vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
-vendor/bin/thermal-engine|7dd2cf5200b87c88dcfd3d18239bd9968efedb3c
 vendor/etc/thermal-4k.conf|1648b94b29fcbacd65a5695eccae404274d9e1e0
 vendor/etc/thermal-arvr.conf|33cbfff90543ceaedf7c4f0d45caf11e9ef9a52f
 vendor/etc/thermal-camera.conf|6882a03c248eb3462bcc2f40754ada2e3d069f08
