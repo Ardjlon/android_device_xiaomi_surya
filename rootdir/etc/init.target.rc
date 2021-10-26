@@ -72,9 +72,6 @@ on boot
     start rmt_storage
     start rfs_access
 
-    # Set thermal mode to evaluation
-    chown system system /sys/class/thermal/thermal_message/sconfig
-
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system

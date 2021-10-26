@@ -1,0 +1,5 @@
+# Thermal write permissions
+allow system_app sysfs_thermal:file rw_file_perms;
+allow system_app sysfs_thermal:file w_file_perms;
+allow system_app sysfs_thermal:file { rw_file_perms getattr };
+allow system_app sysfs_thermal:file write;

@@ -1,5 +1,8 @@
-# Xiaomi Parts
+# Thermal write permissions
 allow system_app sysfs_thermal:file rw_file_perms;
+allow system_app sysfs_thermal:file w_file_perms;
+allow system_app sysfs_thermal:file { rw_file_perms getattr };
+allow system_app sysfs_thermal:file write;
 
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
