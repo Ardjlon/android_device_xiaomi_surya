@@ -1,18 +1,33 @@
 Device and vendor tree:
 
-Fix overheating while charging, but fast charging no works
+Generally many improvements and fixes for a comfortable experience.
+Possibly the final update to A11 (idk), thanks for everything
 
-Many improvements and general perfomance
+Latest OPLauncher thanks to @dlwlrma123
 
-Color modes added back, this allows you to use kcal with third-party apps and keep the changes on restart, only activating a color mode, I recommend saturated
+Update Dolby (Moto Dolby Magisk module 20210830023425) included, thanks @reiryuki
 
-Switch to skiagl renderer
+Shipped with StormBreaker X9 (without wireguard)
 
-Update dalvik properties, thanks for the suggestion to NFS DEV @K1ks1
+Fix haptic gestures
 
-Set Google dialer as default
+Support A2DP offload for Bluetooth Audio
+* Fix many bluetooth audio issues
 
-Enable adaptive sleep
+Improve script perfomance for GamingMode
+* and thermal mode
+
+New appearance in GamingMode (overlay)
+(Thanks to devs of Corvus OS for some changes)
+
+Latest firmware included (V12.5.3.0.RJGMIXM)
+
+Support Alipay and WeChat fingerprint payment (Not tested)
+
+Pixel Launcher added again (Read notes in post)
+
+Add back switchbar to disable dynamic thermal (PocoParts)
+
 
 SOURCE ROM
 

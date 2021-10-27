@@ -1,17 +1,17 @@
 {
-   "datetime": 1633731445,
+   "datetime": 1635365422,
    "donate_url": "https://www.paypal.me/Ardjlon",
    "error": false,
-   "filehash": "a8b7dd8e14ef073e44a83ed217918a44",
-   "filename": "evolution_surya-ota-rq3a.210905.001-09201358-unofficial-unsigned.zip",
+   "filehash": "9d0ccfbd14807c40e7dee245e6e68229",
+   "filename": "evolution_surya-ota-rq3a.211001.001-10271412-unofficial-unsigned.zip",
    "forum_url": "https://t.me/evoxskbugs",
-   "id": "876fe379fe9d0d0ddbb20c2679533d9ec4a6239101405a5be0c0cad042e2d6d6",
+   "id": "8bb1f8831d965f4cc372ab061e145bd73ddd23d5f20857a1326fe3bf3b8762a5",
    "maintainer": "Ardany Jolón (Ardjlon)",
    "maintainer_url": "https://forum.xda-developers.com/m/ardany-jolon.7006405/",
    "news_url": "https://t.me/EvolutionXOfficial",
-   "size": 1886319947,
+   "size": 1888818517,
    "telegram_username": "Ardjlon",
-   "url": "https://sourceforge.net/projects/builds-ardjlon/files/surya/evolution_surya-ota-rq3a.211001.001-10081619-unofficial-unsigned.zip/download",
+   "url": "https://sourceforge.net/projects/builds-ardjlon/files/surya/evolution_surya-ota-rq3a.211001.001-10271412-unofficial-unsigned.zip/download",
    "version": "Eleven",
    "website_url": "https://evolution-x.org"
 }
