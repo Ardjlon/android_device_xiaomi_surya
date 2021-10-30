@@ -15,9 +15,6 @@
 */
 -->
 <resources>
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1dp</dimen>
-
     <!-- Margin start of the system icons super container -->
     <dimen name="system_icons_super_container_avatarless_margin_end">33px</dimen>
 
@@ -26,4 +23,14 @@
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">44px</dimen>
+
+    <!-- The padding on the side of the navigation bar. Must be greater than or equal to
+         navigation_extra_key_width -->
+    <dimen name="navigation_side_padding">85dp</dimen>
+
+    <!-- The padding around the statusbar -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
+    <dimen name="status_bar_padding_start">6dp</dimen>
+    <dimen name="status_bar_padding_end">6dp</dimen>
+    <dimen name="rounded_corner_content_padding">16dp</dimen>
 </resources>
