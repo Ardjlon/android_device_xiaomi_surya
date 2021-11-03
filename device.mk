@@ -19,6 +19,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 2280
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Enforce native interfaces of product partition as VNDK
 PRODUCT_PRODUCT_VNDK_VERSION := current
