@@ -360,7 +360,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    KarnaFrameworks \
     KarnaPowerProfile \
     KarnaSettingsProviderOverlay \
     SuryaSettingsProviderOverlay
@@ -514,7 +513,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     libwpa_client \
-    TetheringConfigOverlay \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
