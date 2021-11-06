@@ -23,5 +23,5 @@
     <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 
     <!-- Whether to show min/max refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">true</bool>
+    <bool name="config_show_refresh_rate_controls">true</bool>
 </resources>
