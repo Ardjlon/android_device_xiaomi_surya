@@ -14,14 +14,20 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_surya.mk \
-    $(LOCAL_DIR)/evolution_surya.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-COMMON_LUNCH_CHOICES := \
-    aosp_surya-user \
-    aosp_surya-userdebug \
-    aosp_surya-eng \
-    evolution_surya-user \
-    evolution_surya-userdebug \
-    evolution_surya-eng
+# Inherit from surya device
+$(call inherit-product, device/xiaomi/surya/device.mk)
+
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common.mk)
+
+PRODUCT_NAME := evolution_surya
+PRODUCT_DEVICE := surya
+PRODUCT_BRAND := POCO
+PRODUCT_MODEL := M2007J20CG
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
