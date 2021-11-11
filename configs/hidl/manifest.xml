@@ -119,14 +119,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
-        <version>2.2</version>
-        <interface>
-            <name>ISoundTriggerHw</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
