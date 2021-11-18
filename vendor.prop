@@ -191,7 +191,9 @@ persist.hwc.enable_vds=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.protected_contents=true
 ro.vendor.qti.sys.fw.bservice_enable=true
-
+sdm.debug.disable_inline_rotator=1
+vendor.display.disable_rotator_downscale=1
+sdm.debug.disable_inline_rotator_secure=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
