@@ -5,9 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_surya.mk
+    $(LOCAL_DIR)/aosp_surya.mk \
+    $(LOCAL_DIR)/evolution_surya.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_surya-user \
     aosp_surya-userdebug \
-    aosp_surya-eng
+    aosp_surya-eng \
+    evolution_surya-user \
+    evolution_surya-userdebug \
+    evolution_surya-eng
