@@ -165,3 +165,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/lirc0                0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/spidev0.1            0660   system     system
+
+# ImproveTouch device
+/dev/hbtp_input           0660   system     system
+/dev/hbtp_vm              0660   system     system
