@@ -648,6 +648,10 @@ vendor/lib64/libllvm-qgl.so
 # Graphics (Adreno - updatable apk)
 -vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk
 
+# Graphics (VulkanAPI Layers) From Google Pixel 4 XL coral-user 12 SP1A.211105.002 7743617 release-keys
+-vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
+-vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
+
 # Hotword enrollment
 product/etc/permissions/privapp-permissions-google-hotword.xml
 product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
