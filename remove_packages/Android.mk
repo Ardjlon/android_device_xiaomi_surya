@@ -26,7 +26,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 	SoundAmplifierPrebuilt \
 	SprintDM \
 	SprintHM \
-	TurboPrebuilt \
+	Flipendo \
 	Tycho \
 	USCCDM \
 	VZWAPNLib \
