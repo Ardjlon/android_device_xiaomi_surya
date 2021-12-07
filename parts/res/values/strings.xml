@@ -13,4 +13,9 @@
      <string name="haptic_level_summary">The amount of vibration intensity</string>
      <string name="haptic_level_summary_incompatible">Kernel did not support this feature</string>
 
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Use ambient display</string>
+
+    <string name="doze_brightness_title">Always on brightness</string>
+    <string name="doze_brightness_summary">%s mode is enabled</string>
 </resources>

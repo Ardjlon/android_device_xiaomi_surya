@@ -26,6 +26,7 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.haptic.HapticUtils;
+import org.lineageos.settings.doze.DozeUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -35,8 +36,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
+        // Dirac
         DiracUtils.initialize(context);
+
+        // Thermal Profiles
         ThermalUtils.startService(context);
         HapticUtils.restoreLevel(context);
+        DozeUtils.checkDozeService(context);
     }
 }
