@@ -127,6 +127,10 @@ public final class ThermalUtils {
         return state;
     }
 
+    protected void setDefaultThermalProfile() {
+        FileUtils.writeLine(THERMAL_SCONFIG, THERMAL_STATE_DEFAULT);
+    }
+
     protected void setThermalProfile(String packageName) {
         String value = getValue();
         String modes[];
@@ -152,6 +156,27 @@ public final class ThermalUtils {
         } else if (mTouchModeChanged) {
             resetTouchModes();
         }
+    }
+
+    protected void setThermalProfileForce(int mode) {
+        String state = THERMAL_STATE_DEFAULT;
+
+        switch (mode) {
+            case STATE_CAMERA:
+                state = THERMAL_STATE_CAMERA;
+                break;
+            case STATE_DIALER:
+                state = THERMAL_STATE_DIALER;
+                break;
+            case STATE_PERFORMANCE:
+                state = THERMAL_STATE_PERFORMANCE;
+                break;
+            case STATE_STREAMING:
+                state = THERMAL_STATE_STREAMING;
+                break;
+        }
+
+        FileUtils.writeLine(THERMAL_SCONFIG, state);
     }
 
     private void updateTouchModes(String packageName) {
