@@ -268,6 +268,9 @@ persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.sib16_support=1
 
+# Sensors
+debug.sensors.diag_buffer_log=false
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
