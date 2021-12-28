@@ -303,11 +303,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1 \
     android.hardware.keymaster@4.1.vendor
 
-# Include Lawnchair
-ifeq ($(USE_LAWNCHAIR),true)
-include packages/apps/Lawnchair/lawnchair.mk
-endif
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.surya
