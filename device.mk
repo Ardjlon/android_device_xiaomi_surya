@@ -17,9 +17,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
-# Firmware Surya
-$(call inherit-product, vendor/xiaomi-firmware/surya/Android.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Disable APEX compression
@@ -498,7 +495,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    vendor/xiaomi-firmware
 
 # Telephony
 PRODUCT_PACKAGES += \
