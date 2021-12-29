@@ -39,7 +39,8 @@ LOCAL_OVERRIDES_PACKAGES := \
 	PrebuiltGmail \
 	YouTube \
 	YouTubeMusicPrebuilt \
-	Drive
+	Drive \
+        Camera2
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := platform
 LOCAL_SRC_FILES := /dev/null
