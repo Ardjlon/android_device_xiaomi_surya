@@ -37,6 +37,11 @@
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
     <allow-in-power-save package="com.qualcomm.qti.telephonyservice" />
 
+    <!-- These GCAM components need this shit for working audio recording -->
+    <allow-in-power-save package="com.google.android.GoogleCamera" />
+    <allow-in-power-save package="com.GoogleCamera.Burial10" />
+    <allow-in-power-save package="com.android.hasli.lmc82" />
+
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.qcrilmsgtunnel" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.telephonyservice" />
@@ -44,4 +49,9 @@
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="org.codeaurora.ims" />
+
+    <!-- These Gcam aplications need access to non-[System]SDK APIs -->
+    <hidden-api-whitelisted-app package="com.google.android.GoogleCamera" />
+    <hidden-api-whitelisted-app package="com.GoogleCamera.Burial10" />
+    <hidden-api-whitelisted-app package="com.android.hasli.lmc82" />
 </config>
