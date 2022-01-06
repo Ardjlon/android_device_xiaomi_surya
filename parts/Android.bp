@@ -22,3 +22,10 @@ android_app {
     },
 
 }
+
+prebuilt_etc {
+    name: "privapp-permissions-parts.xml",
+    sub_dir: "permissions",
+    src: "privapp-permissions-parts.xml",
+    filename_from_src: true,
+}
