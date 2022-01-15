@@ -1,4 +1,3 @@
-# Audio
 /dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
 
 # Battery secret

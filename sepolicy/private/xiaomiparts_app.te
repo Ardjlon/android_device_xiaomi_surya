@@ -26,4 +26,8 @@ allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
 get_prop(xiaomiparts_app, xiaomiparts_prop)
 set_prop(xiaomiparts_app, xiaomiparts_prop)
 
+# Allow XiaomiParts to search, read and write to sysfs_kcal
+allow xiaomiparts_app sysfs_kcal:dir search;	
+allow xiaomiparts_app sysfs_kcal:file rw_file_perms;
+
 binder_call(xiaomiparts_app, gpuservice)
