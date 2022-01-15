@@ -12,6 +12,9 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 # Boot reason
 type proc_kernel_boot_reason, fs_type, proc_type;
 
+# kcal
+type sysfs_kcal, fs_type, sysfs_type;
+
 # Last kmsg
 type proc_last_kmsg, fs_type, proc_type;
 
