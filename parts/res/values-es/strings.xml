@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Caracteríssticas LCD</string>
+    <string name="lcd_features_summary">Modo HBM y CABC</string>
+    <string name="lcd_hbm_title">Modo HBM</string>
+    <string name="lcd_cabc_title">Modo CABC</string>
+    <string name="lcd_features_info">El modo de brillo alto (HBM) aumenta el brillo máximo de la pantalla para mejorar la visibilidad bajo la luz del sol. Aumenta el consumo de energía.\n\n Control de luz de fondo adaptable al contenido (CABC) ajusta la pantalla y el brillo de la retroiluminación según el contenido que se muestra actualmente, para reducir el consumo de energía sin degradación.</string>
+
+     <!-- Haptic Level Settings -->
+     <string name="haptic_title">Retroalimentación háptica</string>
+     <string name="haptic_level_title">Nivel</string>
+     <string name="haptic_level_summary">Ajusta el nivel de fuerza de la vibración háptica general</string>
+     <string name="haptic_level_summary_incompatible">Su núcleo (kernel) no admite esta función</string>
+</resources>

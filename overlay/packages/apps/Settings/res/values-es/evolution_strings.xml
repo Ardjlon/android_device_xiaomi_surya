@@ -13,4 +13,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="build_maintainer_summary">Ardjlon</string>
+    <string name="proximity_wake_title">Prevenir despertar accidental</string>
+    <string name="proximity_wake_summary">Verifica el sensor de proximidad antes de despertar la pantalla</string>
+    <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Despierta la pantalla al conectar o desconectar una fuente de alimentación</string>
+    <string name="doze_on_charge_title">Siempre encendido cuando cargas</string>
+    <string name="doze_on_charge_summary">Muestra la pantalla ambiente mientras cargas el dispositivo</string>
 </resources>
