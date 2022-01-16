@@ -6,7 +6,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 	AmbientSensePrebuilt \
-	AndroidAutoStubPrebuilt \
 	AppDirectedSMSService \
 	ConnMO \
 	DCMO \
@@ -18,7 +17,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	MyVerizonServices \
 	OBDM_Permissions \
 	Ornament \
-	SafetyHubPrebuilt \
 	SCONE \
 	ScribePrebuilt \
 	Showcase \
