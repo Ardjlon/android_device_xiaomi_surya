@@ -25,4 +25,8 @@
      <string name="haptic_level_title">Nivel</string>
      <string name="haptic_level_summary">Ajusta el nivel de fuerza de la vibración háptica general</string>
      <string name="haptic_level_summary_incompatible">Su núcleo (kernel) no admite esta función</string>
+
+    <!-- Doze Mode -->
+    <string name="wake_on_gesture_title">Despertar con gestos</string>
+    <string name="wake_on_gesture_summary">Despierta pantalla de bloqueo, en lugar de pantalla ambiente sino hay notificaciones</string>
 </resources>
