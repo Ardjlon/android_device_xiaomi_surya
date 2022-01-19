@@ -26,6 +26,7 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.display.KcalUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.haptic.HapticUtils;
 
