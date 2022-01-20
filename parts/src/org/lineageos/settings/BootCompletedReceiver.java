@@ -27,9 +27,9 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.display.KcalUtils;
+import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.haptic.HapticUtils;
-
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
@@ -46,5 +46,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         HapticUtils.restoreLevel(context);
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);
+        RefreshUtils.startService(context);
     }
 }
