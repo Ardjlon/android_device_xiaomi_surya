@@ -29,6 +29,7 @@ import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.display.KcalUtils;
+import org.lineageos.settings.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -52,5 +53,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Doze
         DozeUtils.checkDozeService(context);
+
+        // Refresh rate
+        RefreshUtils.startService(context);
     }
 }
