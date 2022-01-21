@@ -1,0 +1,1 @@
+allow xiaomiparts_app audioserver_service:service_manager { find };
