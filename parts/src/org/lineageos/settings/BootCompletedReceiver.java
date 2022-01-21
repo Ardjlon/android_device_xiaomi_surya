@@ -25,7 +25,6 @@ import android.util.Log;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
-import org.lineageos.settings.haptic.HapticUtils;
 import org.lineageos.settings.doze.DozeUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -41,7 +40,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Thermal Profiles
         ThermalUtils.startService(context);
-        HapticUtils.restoreLevel(context);
+
+        // Doze
         DozeUtils.checkDozeService(context);
     }
 }
