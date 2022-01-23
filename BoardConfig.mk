@@ -126,6 +126,7 @@ TARGET_KERNEL_CLANG_VERSION := 14
 #Snappy kernel
 TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
+TARGET_KERNEL_VERSION := 4.14
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
