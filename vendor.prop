@@ -246,7 +246,6 @@ ro.lmk.filecache_min_kb=153600
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 ro.vendor.qti.core.ctl_max_cpu=6
 ro.vendor.qti.core.ctl_min_cpu=1
 
