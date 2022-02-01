@@ -38,5 +38,8 @@ allow xiaomiparts_app property_socket:sock_file { write };
 get_prop(xiaomiparts_app, xiaomiparts_prop)
 set_prop(xiaomiparts_app, xiaomiparts_prop)
 
+# Allow XiaomiParts to get settingsdebug.instant.packages prop
+get_prop(xiaomiparts_app, settingslib_prop)
+
 binder_call(xiaomiparts_app, gpuservice)
 
