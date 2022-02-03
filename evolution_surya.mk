@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from common AOSP configuration
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
