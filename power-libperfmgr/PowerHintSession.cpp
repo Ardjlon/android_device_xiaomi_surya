@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "powerhal-libperfmgr"
+#define LOG_TAG "android.hardware.power@-service.xiaomi_surya-libperfmgr"
 #define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
 
 #include <android-base/logging.h>
