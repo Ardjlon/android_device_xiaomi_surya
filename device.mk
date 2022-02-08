@@ -23,6 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
 
+# Architecture
+ifeq ($(EVOX),true)
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
+endif
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
