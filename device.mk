@@ -27,6 +27,9 @@ PRODUCT_COMPRESSED_APEX := false
 ifeq ($(EVOX),true)
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_2ND_ARCH_VARIANT := armv8-2a
+else
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 endif
 
 # Audio
