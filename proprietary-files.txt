@@ -632,6 +632,18 @@ vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
+vendor/lib/libVkLayer_q3dtools.so
+vendor/lib/libadreno_app_profiles.so
+vendor/lib/libgpu_tonemapper.so
+vendor/lib/libgpudataproducer.so
+vendor/lib/libllvm-qgl.so
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
+vendor/lib64/libVkLayer_q3dtools.so
+vendor/lib64/libadreno_app_profiles.so
+vendor/lib64/libgpu_tonemapper.so
+vendor/lib64/libgpudataproducer.so
+vendor/lib64/libllvm-qgl.so
 
 # Graphics (Adreno - updatable apk)
 -vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk
