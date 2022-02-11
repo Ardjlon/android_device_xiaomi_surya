@@ -479,7 +479,6 @@ system_ext/etc/permissions/dpmapi.xml|9158c9789cc7135a685b3fb27f8cc27108b51fef
 -system_ext/framework/com.qti.dpmframework.jar|6c2a814d2a1b175b5be47640d75ebf7d23435a5a
 -system_ext/framework/dpmapi.jar|a2c04b0850b02dc5ec01e08f856b4facfd08b997
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|f2d02195cca305fad78402c65d090bad72955262
-system_ext/lib64/libdiag_system.so|07a16cb2f3fd66c1e23500f8dd72e0bde1b06cae
 system_ext/lib64/libdpmctmgr.so|df8427f799e6a8cc5ff2ff39fe0323d8b60e815a
 system_ext/lib64/libdpmfdmgr.so|bd1bbd376c2bdfac2f3a4c230ce65cd35cb1c6bd
 system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
@@ -668,6 +667,22 @@ vendor/firmware/a615_zap.elf|907b57fc02346c3de4b8d29e984f5937d83174f4
 vendor/firmware/a615_zap.mdt|0c5505dc3d8420ff4df6633939b2262d15d88171
 vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
 vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+
+# IMS - sweet-qssi-user-12-SKQ1.210908.001
+system_ext/lib64/lib-imsvideocodec.so|b7001bb1008106ccb9ef92dd2560e2052b40c325
+system_ext/lib64/lib-imsvt.so|e794300d62e04e17e43c32916c7265ee32645f91
+system_ext/lib64/lib-imsvtextutils.so|16bed08e80919635fcb7ace934bd5f16f059c182
+system_ext/lib64/lib-imsvtutils.so|875748249b9269e964f467311c72e123878c0de9
+system_ext/lib64/libdiag_system.so|51b930474a2b42d42e68b9f5d83eef1c1ea5df56
+system_ext/lib64/libimscamera_jni.so|ff3d65093f5bf19fba95798b0a121ee510b0f72e
+system_ext/lib64/libimsmedia_jni.so|3c625b6216237f1df44e0c75fcc6894f1a296847
+system_ext/lib64/vendor.qti.ims.callcapability@1.0.so|711d6ceca11af251e48b0705cefe5ce14d5f4142
+system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|a15e4367597909e74fb4c3a67025720bbb1793a1
+system_ext/lib64/vendor.qti.ims.factory@1.0.so|7d468f0636ce9671d23492b06d0ab16363f52ae1
+system_ext/lib64/vendor.qti.ims.factory@1.1.so|a3f670e0dce45a8371300f2919c806a2dc5e2b80
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|da8c5e108fdb9a546d37a78147872207e9ead8be
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
+-system_ext/priv-app/ims/ims.apk|664d341b2cbd4c52c5113b0e7a9af1582e75e997
 
 # IPA firmware
 vendor/firmware/ipa_fws.b00|bc93bd0d1ed662f475579a5d7e706b1ad970eb7c
@@ -960,12 +975,7 @@ vendor/radio/qcril_database/qcril.db|9104a7f93338fcf9e713a8eae168f0cb33c2ad66
 
 # Radio
 -system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5
-system_ext/lib64/lib-imsvideocodec.so|6ff4cd7e90c533fbe1d1546214fadcdade27d5af
-system_ext/lib64/lib-imsvt.so|54a989105eebdb9747b215ae23551ec2507541e6
-system_ext/lib64/lib-imsvtextutils.so|7fe2cf5ac5f84c3c61b4458099efcf900801c2e2
 system_ext/lib64/lib-imsvtutils.so|a860f315c92a1a68055a7bcdc72137f8961f6608
-system_ext/lib64/libimscamera_jni.so|e1f3415ef21497f5bb551b846e7f92297bdd3156
-system_ext/lib64/libimsmedia_jni.so|ad16488a887c84de26d73e3eb529865b3f6ff4ee
 system_ext/lib64/vendor.qti.ims.callcapability@1.0.so|788b7ce5c4e424507057f5bef7bacc6c663e3142
 system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|ee4e22a64ebed410303e5fe8e3961be11edc60a0
 system_ext/lib64/vendor.qti.ims.factory@1.0.so|fbebef1b0de8dbb2a2d059175bf53fa08ef20623
@@ -974,8 +984,6 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|2ffe2c86e070f5b8d406f5cf27913fe
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so|414629865b66fe0dced9de924c78d32c01ad5fb1
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so|bb94be53fe9f52ed4b69dc42493ac6cb48a720eb
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|94ee2757393b29787ff96a8694c95a7d7d8d7319
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|393c5affc1e8e36470705ec44396d1ffa603a541
--system_ext/priv-app/ims/ims.apk|9f0a48f1f6f0d23b558c659c9658f3913a8ce185
 -vendor/app/IWlanService/IWlanService.apk|e7596c8faf1990d7e25e94ccf979bfc0a107537a
 vendor/bin/ims_rtp_daemon|67565d6b796e32e4ef3776cf62161246baf631e5
 vendor/bin/imsdatadaemon|40c0afe073df837f35cd9b67409d09a2e2ec5454
@@ -1115,6 +1123,9 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
+
+# Telephony (qti-telephony-common)
+-system_ext/framework/qti-telephony-common.jar|e2fc79e0c07cad7a3564a3151d46d6f379637358
 
 # Time
 -vendor/app/TimeService/TimeService.apk|7d176a69b270006a511a3c30f544db98a0ccaa37
