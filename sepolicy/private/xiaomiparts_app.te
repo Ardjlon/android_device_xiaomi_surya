@@ -32,9 +32,10 @@ allow xiaomiparts_app app_api_service:service_manager find;
 allow xiaomiparts_app sysfs_kcal:dir search;
 allow xiaomiparts_app sysfs_kcal:file rw_file_perms;
 
-allow xiaomiparts_app default_prop:file { read };
+dontaudit xiaomiparts_app default_prop:file { read };
 allow xiaomiparts_app property_socket:sock_file { write };
 
+dontaudit xiaomiparts_app persist_lcd_prop:file { read };
 get_prop(xiaomiparts_app, persist_lcd_prop)
 set_prop(xiaomiparts_app, persist_lcd_prop)
 
