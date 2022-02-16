@@ -27,9 +27,9 @@
     <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
     <string name="contrast_slider_title">Contrast</string>
 
-     <!-- Refresh rate  -->
-    <string name="refresh_title">App Refresh Rate</string>
-    <string name="refresh_summary">Adjust per-app maximum refresh rate</string>
+    <!-- Refresh Rate  -->
+    <string name="refresh_title">Refresh Rate per-app</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application (Games must have support, for high values)</string>
     <string name="refresh_default">Default</string>
     <string name="refresh_low">Low (30Hz)</string>
     <string name="refresh_moderate">Moderate (50Hz)</string>
