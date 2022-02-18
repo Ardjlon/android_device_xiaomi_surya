@@ -23,11 +23,11 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
 
-on property:persist.lcd.hbm_mode=*
-    write /sys/devices/platform/soc/soc:qcom,dsi-display/hbm ${persist.lcd.hbm_mode}
+on property:persist.xiaomiparts.lcd.hbm=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display/hbm ${persist.xiaomiparts.lcd.hbm}
 
-on property:persist.lcd.cabc_mode=*
-    write /sys/devices/platform/soc/soc:qcom,dsi-display/cabc ${persist.lcd.cabc_mode}
+on property:persist.xiaomiparts.lcd.cabc=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display/cabc ${persist.xiaomiparts.lcd.cabc}
 
 on property:sys.perf_profile=1
     write /dev/stune/top-app/schedtune.boost 10

@@ -29,8 +29,8 @@ import org.lineageos.settings.R;
 public class LcdFeaturesPreferenceFragment extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    public static final String HBM_PROP = "persist.lcd.hbm_mode";
-    public static final String CABC_PROP = "persist.lcd.cabc_mode";
+    public static final String HBM_PROP = "persist.xiaomiparts.lcd.hbm";
+    public static final String CABC_PROP = "persist.xiaomiparts.lcd.cabc";
 
     private static final String KEY_HBM = "pref_hbm";
     private static final String KEY_CABC = "pref_cabc";

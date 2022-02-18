@@ -76,3 +76,6 @@ persist.vendor.otg_control=true
 
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
+
+# XiaomiParts
+persist.xiaomiparts.lcd.cabc=1

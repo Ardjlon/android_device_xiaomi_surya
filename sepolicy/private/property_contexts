@@ -32,3 +32,6 @@ ro.miui.                       u:object_r:exported_system_prop:s0
 
 # XiaomiParts
 persist.lcd.                   u:object_r:persist_lcd_prop:s0
+
+# Device Parts
+persist.xiaomiparts.                   u:object_r:xiaomiparts_prop:s0
