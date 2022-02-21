@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted - from surya MIUI V12.5.4.0.RJGMIXM.
+# All unpinned blobs are extracted - from surya MIUI V12.5.5.0.RJGMIXM.
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
