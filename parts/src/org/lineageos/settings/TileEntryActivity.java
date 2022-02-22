@@ -25,14 +25,39 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import org.lineageos.settings.dirac.DiracActivity;
+import org.lineageos.settings.display.LcdFeaturesPreferenceActivity;
+import org.lineageos.settings.kprofiles.KProfilesSettingsActivity;
+
 public class TileEntryActivity extends Activity {
     private static final String TAG = "TileEntryActivity";
+    private static final String SETTINGS_DISPLAY_COMPONENT = "com.android.settings/.Settings$DisplaySettingsActivity";
+    private static final String DIRAC_TILE = "org.lineageos.settings.dirac.DiracTileService";
+    private static final String HBM_TILE = "org.lineageos.settings.display.HbmTileService";
+    private static final String CABC_TILE = "org.lineageos.settings.display.CabcTileService";
+    private static final String REFRESH_RATE_TILE = "org.lineageos.settings.RefreshRateTileService";
+    private static final String KPROFILES = "org.lineageos.settings.kprofiles.KProfilesModesTileService";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ComponentName sourceClass = getIntent().getParcelableExtra(Intent.EXTRA_COMPONENT_NAME);
         switch (sourceClass.getClassName()) {
+            case DIRAC_TILE:
+                openActivitySafely(new Intent(this, DiracActivity.class));
+                break;
+            case HBM_TILE:
+            case CABC_TILE:
+                openActivitySafely(new Intent(this, LcdFeaturesPreferenceActivity.class));
+                break;
+            case REFRESH_RATE_TILE:
+                Intent targetIntent = new Intent(Intent.ACTION_MAIN);
+                targetIntent.setComponent(ComponentName.unflattenFromString(SETTINGS_DISPLAY_COMPONENT));
+                openActivitySafely(targetIntent);
+                break;
+            case KPROFILES:
+                openActivitySafely(new Intent(this, KProfilesSettingsActivity.class));
+                break;
             default:
                 finish();
                 break;
