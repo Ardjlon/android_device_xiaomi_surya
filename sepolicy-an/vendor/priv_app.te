@@ -1,0 +1,14 @@
+dontaudit priv_app bt_firmware_file:filesystem getattr;
+dontaudit priv_app firmware_file:filesystem getattr;
+dontaudit priv_app mnt_vendor_file:dir search;
+
+# Loop
+allow priv_app sysfs_loop:file { read open };
+
+# PCI
+allow priv_app proc_pci_devices:file r_file_perms;
+
+# Wcnss
+allow priv_app sysfs_wcnss:file { read open };
+
+dontaudit priv_app proc_interrupts:file open;

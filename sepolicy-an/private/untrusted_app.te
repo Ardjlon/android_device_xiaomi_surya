@@ -1,0 +1,2 @@
+dontaudit untrusted_app hal_memtrack_hwservice:hwservice_manager { find };
+allow untrusted_app window_service:service_manager { find };
