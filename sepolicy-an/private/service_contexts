@@ -5,3 +5,4 @@ vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot1    u:object_r:vendor_ha
 vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot2    u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot1              u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot2              u:object_r:vendor_hal_telephony_service:s0
+android.system.keystore2                  u:object_r:keystore_service:s0
