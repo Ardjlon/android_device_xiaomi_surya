@@ -161,6 +161,7 @@ include $(LOCAL_PATH)/device_prop.mk
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
+    android.hardware.graphics.composer@2.1 \
     android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.composer@2.2-resources.vendor \
