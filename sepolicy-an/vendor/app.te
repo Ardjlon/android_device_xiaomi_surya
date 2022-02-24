@@ -3,3 +3,6 @@ get_prop(appdomain, vendor_persist_camera_prop)
 
 dontaudit appdomain sysfs_msm_subsys:dir search;
 dontaudit appdomain sysfs_msm_subsys:file r_file_perms;
+
+# Read and write /data/data/com.android.providers.telephony files passed over Binder.
+allow appdomain radio_data_file:file { read write getattr };
