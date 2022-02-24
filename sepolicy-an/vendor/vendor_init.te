@@ -2,6 +2,7 @@ set_prop(vendor_init, vendor_fp_prop)
 set_prop(vendor_init, vendor_ims_prop)
 set_prop(vendor_init, vendor_cnd_prop)
 set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_system_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 set_prop(vendor_init, vendor_power_prop)
 

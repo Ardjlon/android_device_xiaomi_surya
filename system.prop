@@ -33,6 +33,10 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 
+#MIUI Camera props
+sys.camera.miui.apk=0
+vendor.camera.miui.apk=0
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
