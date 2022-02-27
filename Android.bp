@@ -1,5 +1,6 @@
 soong_namespace {
     imports: [
+        "kernel/xiaomi/surya",
         "hardware/google/interfaces",
         "hardware/google/pixel",
     ],
