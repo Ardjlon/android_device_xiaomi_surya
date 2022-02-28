@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Lawnchair
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
@@ -44,4 +44,5 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 EVOX := true
