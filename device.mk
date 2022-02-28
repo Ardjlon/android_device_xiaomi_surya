@@ -345,6 +345,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.surya
 
+ifeq ($(strip $(TARGET_BUILD_MATLOG)),true)
+PRODUCT_PACKAGES += \
+    MatlogX
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
