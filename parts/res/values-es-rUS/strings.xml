@@ -20,16 +20,13 @@
     <!-- Kcal settings -->
     <string name="kcal_settings_title">Colores de pantalla</string>
     <string name="kcal_settings_summary">Ajusta el color de tu pantalla</string>
-    <string name="kcal_enable_title">Configuración de color de pantalla</string>
-    <string name="kcal_enable_summary">Habitila para personalizar los colores</string>
+    <string name="kcal_enable_title">Configurar pantalla</string>
+    <string name="kcal_enable_summary">Habitilar para personalizar los colores</string>
     <string name="kcal_not_supported">Su núcleo (kernel) no admite esta función</string>
-    <string name="red_slider_title">Rojo</string>
-    <string name="green_slider_title">Verde</string>
-    <string name="blue_slider_title">Azul</string>
-    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_rgb_preference_category_title">Ajustes RGB</string>
     <string name="kcal_calibration_preference_category_title">Calibración de color</string>
     <string name="saturation_slider_title">Saturación</string>
-    <string name="reset_default_button_title">Restablecer</string>
-    <string name="reset_default_button_summary">Configura los valores predeterminados</string>
+    <string name="reset_default_button_title">Resturar configuración</string>
+    <string name="reset_default_button_summary">Restablecer todos los ajustes a valores predeterminados</string>
     <string name="contrast_slider_title">Contraste</string>
 </resources>
