@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# OPLauncher
-$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
+# Lawnchair
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
 
 # Google Camera Parrot
-$(call inherit-product, vendor/GoogleCamera/GoogleCamera.mk)
+$(call inherit-product, vendor/GoogleCamera/GoogleCameraParrot.mk)
 
 # Inherit from common Evolution X configuration
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
@@ -45,5 +45,3 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Gapps
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUSE_PIXEL_LAUNCHER := true
