@@ -46,7 +46,7 @@ def OTA_InstallEnd(info, input_zip):
   AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   AddImage(info, input_zip, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
-  info.script.Print("Patching firmware V12.5.3.0.RJGMIXM...")
+  info.script.Print("Patching firmware V12.5.5.0.RJGMIXM...")
 
   # Firmware
   AddImageRadio(info, input_zip, "cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64")
