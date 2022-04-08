@@ -24,15 +24,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COMPRESSED_APEX := false
 
 # Architecture
-ifeq ($(EVOX),true)
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-else
+ifeq ($(ANCIENT),true)
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_2ND_ARCH_VARIANT := armv8-a
+else
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 endif
 
-# Architecture
 ifeq ($(SEPOLICY_ANCIENT),true)
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-an/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-an/private
