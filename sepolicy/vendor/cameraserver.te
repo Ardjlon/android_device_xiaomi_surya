@@ -2,9 +2,6 @@
 # and use debug properties
 get_prop(cameraserver, vendor_display_prop)
 
-set_prop(cameraserver, vendor_camera_prop)
-set_prop(cameraserver, vendor_system_prop)
-
 # It's confirmed that all attempts of access gpu_device by the gralloc mapper
 # are not essential, and access denial to it won't break any gralloc mapper
 # functionality.
