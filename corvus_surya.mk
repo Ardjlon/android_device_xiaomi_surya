@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2020 Wave-OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,4 +44,5 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
+USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
