@@ -318,6 +318,12 @@
       "Node": "KernelBatterySaver",
       "Duration": 0,
       "Value": "Y"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "0"
     }
   ]
 }
