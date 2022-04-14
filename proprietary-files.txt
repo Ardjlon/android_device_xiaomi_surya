@@ -690,6 +690,9 @@ vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
 -system_ext/lib64/libimsmedia_jni.so|3c625b6216237f1df44e0c75fcc6894f1a296847
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
 
+# RIL (IMS) - from sake - 31.1010.0410.43
+-system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
+
 # IMS - sweet-qssi-user-12-SKQ1.210908.001
 system_ext/lib64/libdiag_system.so|51b930474a2b42d42e68b9f5d83eef1c1ea5df56
 system_ext/lib64/vendor.qti.ims.callcapability@1.0.so|711d6ceca11af251e48b0705cefe5ce14d5f4142
@@ -697,7 +700,6 @@ system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|a15e4367597909e74fb4c3a67025720b
 system_ext/lib64/vendor.qti.ims.factory@1.0.so|7d468f0636ce9671d23492b06d0ab16363f52ae1
 system_ext/lib64/vendor.qti.ims.factory@1.1.so|a3f670e0dce45a8371300f2919c806a2dc5e2b80
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|da8c5e108fdb9a546d37a78147872207e9ead8be
--system_ext/priv-app/ims/ims.apk|664d341b2cbd4c52c5113b0e7a9af1582e75e997
 
 # IPA firmware
 vendor/firmware/ipa_fws.b00|bc93bd0d1ed662f475579a5d7e706b1ad970eb7c
