@@ -19,6 +19,7 @@ ro.audio.monitorRotation=true
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.sfx.scenario=true
+ro.vendor.audio.soundfx.type=mi  
 ro.vendor.audio.soundfx.usb=true
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
