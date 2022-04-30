@@ -142,6 +142,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/init.xiaomiparts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.xiaomiparts.rc \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-parts.xml
 
+# Dex/ART optimization
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    Settings \
+    SystemUI
+
 # Camera
 PRODUCT_PACKAGES += \
     libshim_megvii
