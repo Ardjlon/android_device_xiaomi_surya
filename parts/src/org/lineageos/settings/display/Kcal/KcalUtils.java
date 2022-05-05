@@ -22,10 +22,16 @@ import org.lineageos.settings.utils.FileUtils;
 
 public final class KcalUtils {
 
-    public static final String KCAL_ENABLE_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_enable";
-    public static final String KCAL_RGB_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal";
-    public static final String KCAL_SATURATION_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_sat";
-    public static final String KCAL_CONTRAST_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_cont";
+    public static final String KCAL_ENABLE_NODE = "/sys/module/msm_drm/parameters/kcal_enabled";
+
+    public static final String KCAL_FILE = "/sys/module/msm_drm/parameters/";
+    public static final String KCAL_RED_NODE = KCAL_FILE + "kcal_red";
+    public static final String KCAL_GREEN_NODE = KCAL_FILE + "kcal_green";
+    public static final String KCAL_BLUE_NODE = KCAL_FILE + "kcal_blue";
+    public static final String KCAL_SATURATION_NODE = KCAL_FILE + "kcal_sat";
+    public static final String KCAL_HUE_NODE = KCAL_FILE + "kcal_hue";
+    public static final String KCAL_VALUE_NODE = KCAL_FILE + "kcal_val";
+    public static final String KCAL_CONTRAST_NODE = KCAL_FILE + "kcal_cont";
 
     private static final String[] COLOR_PROFILE_SETTINGS = {"red", "green", "blue", "saturation", "contrast"};
 
@@ -43,7 +49,9 @@ public final class KcalUtils {
     // RED GREEN BLUE is the format of the data that will be printed to the node
 
     public static void writeConfigToNode(String node, int position, int value) {
-        String mDefaultRgbFormat = "R G B";
+        String mDefaultRedFormat = "R";
+        String mDefaultGreenFormat = "G";
+        String mDefaultBlueFormat = "B";
         String mNewNodeData = "";
 
         switch(position) {
@@ -51,20 +59,20 @@ public final class KcalUtils {
                 mNewNodeData = String.valueOf(value);
                 break;
             case 1:
-                mNewNodeData = mDefaultRgbFormat.replace("R", String.valueOf(value));
+                mNewNodeData = mDefaultRedFormat.replace("R", String.valueOf(value));
                 break;
             case 2:
-                mNewNodeData = mDefaultRgbFormat.replace("G", String.valueOf(value));
+                mNewNodeData = mDefaultGreenFormat.replace("G", String.valueOf(value));
                 break;
             case 3:
-                mNewNodeData = mDefaultRgbFormat.replace("B", String.valueOf(value));
+                mNewNodeData = mDefaultBlueFormat.replace("B", String.valueOf(value));
                 break;
         }
 
          mNewNodeData = mNewNodeData
-            .replace("R", getNodeData(KCAL_RGB_NODE, 1))
-            .replace("G", getNodeData(KCAL_RGB_NODE, 2))
-            .replace("B", getNodeData(KCAL_RGB_NODE, 3));
+            .replace("R", getNodeData(KCAL_RED_NODE, 1))
+            .replace("G", getNodeData(KCAL_GREEN_NODE, 2))
+            .replace("B", getNodeData(KCAL_BLUE_NODE, 3));
 
         FileUtils.writeLine(node, mNewNodeData);
     }
@@ -90,10 +98,12 @@ public final class KcalUtils {
         FileUtils.writeLine(KcalUtils.KCAL_ENABLE_NODE,
             sharedPrefs.getBoolean("kcal_enable", false) ? "1" : "0");
 
-        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, sharedPrefs.getInt("red_slider", 256));
-        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 2, sharedPrefs.getInt("green_slider", 256));
-        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 3, sharedPrefs.getInt("blue_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RED_NODE, 1, sharedPrefs.getInt("red_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_GREEN_NODE, 2, sharedPrefs.getInt("green_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_BLUE_NODE, 3, sharedPrefs.getInt("blue_slider", 256));
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_SATURATION_NODE, 0, sharedPrefs.getInt("saturation_slider", 255));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_HUE_NODE, 0, sharedPrefs.getInt("hue_slider", 0));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_VALUE_NODE, 0, sharedPrefs.getInt("value_slider", 255));
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_CONTRAST_NODE, 0, sharedPrefs.getInt("contrast_slider", 255));
     }
 

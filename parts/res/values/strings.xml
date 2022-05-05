@@ -23,6 +23,9 @@
     <string name="reset_default_button_title">Reset to default configuration</string>
     <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
     <string name="contrast_slider_title">Contrast</string>
+    <string name="value_slider_title">Value</string>
+    <string name="hue_slider_title">Hue</string>
+
 
     <string name="color_profiles">Color profiles</string>
     <string name="color_profile_default">Default</string>
