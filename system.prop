@@ -21,6 +21,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.andr
 ro.charger.enable_suspend=true
 persist.vendor.quick.charge=1
 
+# Fingerprint sensor
+persist.wm.enable_remote_keyguard_animation=0
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
