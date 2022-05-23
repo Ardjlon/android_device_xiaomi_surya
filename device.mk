@@ -455,10 +455,6 @@ PRODUCT_PACKAGES += \
     NotchBarKiller \
     WifiOverlay
 
-# Enable gestural navigation overlay to match default navigation mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
