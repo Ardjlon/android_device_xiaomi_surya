@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COMPRESSED_APEX := false
 
 # Architecture
-ifeq ($(EVOX),true)
+ifeq ($(ARMV8_2A),true)
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_2ND_ARCH_VARIANT := armv8-2a
 else
