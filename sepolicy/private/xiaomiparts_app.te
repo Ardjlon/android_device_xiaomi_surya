@@ -46,5 +46,9 @@ allow xiaomiparts_app property_socket:sock_file { write };
 # Allow XiaomiParts to get settingsdebug.instant.packages prop
 get_prop(xiaomiparts_app, settingslib_prop)
 
+# Allow XiaomiParts to read and write to sysfs_vibrator
+allow xiaomiparts_app sysfs_vibrator:dir search;
+allow xiaomiparts_app sysfs_vibrator:file rw_file_perms;
+
 # Allow binder communication with gpuservice
 binder_call(xiaomiparts_app, gpuservice)
