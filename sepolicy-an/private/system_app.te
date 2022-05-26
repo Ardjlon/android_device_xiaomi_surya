@@ -1,7 +1,0 @@
-# XiaomiParts
-allow system_app proc_nvt_feature:file rw_file_perms;
-set_prop(system_app, persist_lcd_prop)
-get_prop(system_app, persist_lcd_prop)
-allow system_app system_suspend_control_internal_service:service_manager { find };
-allow system_app system_suspend_control_service:service_manager { find };
-allow system_app tracingproxy_service:service_manager { find };

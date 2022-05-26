@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 Paranoid Android
+# Copyright (C) 2022 Spark OS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -18,26 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Disable APEX compression
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
-
-# Architecture
-ifeq ($(ARMV8_2A),true)
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-else
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_2ND_ARCH_VARIANT := armv8-a
-endif
-
-# Architecture
-ifeq ($(SEPOLICY_ANCIENT),true)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-an/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-an/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-an/public
-else
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-endif
 
 # Audio
 PRODUCT_PACKAGES += \

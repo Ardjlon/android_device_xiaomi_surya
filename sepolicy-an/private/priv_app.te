@@ -1,2 +1,0 @@
-dontaudit priv_app hal_memtrack_hwservice:hwservice_manager { find };
-dontaudit priv_app default_android_service:service_manager { find };
