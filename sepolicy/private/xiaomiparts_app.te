@@ -43,3 +43,6 @@ get_prop(xiaomiparts_app, settingslib_prop)
 
 binder_call(xiaomiparts_app, gpuservice)
 
+# Allow XiaomiParts to read and write to sysfs_vibrator
+allow xiaomiparts_app sysfs_vibrator:dir search;
+allow xiaomiparts_app sysfs_vibrator:file rw_file_perms;
