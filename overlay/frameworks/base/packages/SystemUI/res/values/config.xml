@@ -30,4 +30,7 @@
 
     <!-- Whether global actions should show an informational message about changes in S -->
     <bool name="global_actions_show_change_info">true</bool>
+
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
