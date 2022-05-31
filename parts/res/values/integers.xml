@@ -33,4 +33,7 @@
         <item>48</item>
         <item>50</item>
      </integer-array>
+
+     <!-- KProfiles Levels -->
+     <integer name="kprofiles_default">2</integer>
 </resources>

@@ -27,6 +27,7 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.display.KcalUtils;
+import org.lineageos.settings.kprofiles.KProfilesUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.haptic.HapticUtils;
@@ -47,5 +48,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);
         RefreshUtils.startService(context);
+        KProfilesUtils.restoreKProfiles(context);
     }
 }
