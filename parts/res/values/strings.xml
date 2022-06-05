@@ -65,4 +65,6 @@
     <string name="haptic_level_summary">The amount of vibration intensity</string>
     <string name="haptic_level_summary_incompatible">Kernel did not support this feature</string>
 
+    <string name="thermal_streaming">Streaming</string>
+
 </resources>
