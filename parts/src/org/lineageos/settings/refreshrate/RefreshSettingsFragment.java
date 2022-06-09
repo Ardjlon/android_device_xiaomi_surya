@@ -103,7 +103,6 @@ public class RefreshSettingsFragment extends PreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        getActivity().setTitle(getResources().getString(R.string.refresh_title));
         rebuild();
     }
 
@@ -205,7 +204,7 @@ public class RefreshSettingsFragment extends PreferenceFragment
         switch (state) {
             case RefreshUtils.STATE_LOW:
                 return R.drawable.ic_refresh_30;
-            case RefreshUtils.STATE_MEDIUM:
+            case RefreshUtils.STATE_STANDARD:
                 return R.drawable.ic_refresh_60;
             case RefreshUtils.STATE_HIGH:
                 return R.drawable.ic_refresh_90;
@@ -243,7 +242,7 @@ public class RefreshSettingsFragment extends PreferenceFragment
         private final int[] items = {
                 R.string.refresh_default,
                 R.string.refresh_low,
-                R.string.refresh_medium,
+                R.string.refresh_standard,
                 R.string.refresh_high,
                 R.string.refresh_extreme
         };
@@ -376,8 +375,8 @@ public class RefreshSettingsFragment extends PreferenceFragment
                 case RefreshUtils.STATE_LOW:
                     mRefreshUtils.writePackage(entry.info.packageName, RefreshUtils.STATE_LOW);
                     break;
-                case RefreshUtils.STATE_MEDIUM:
-                    mRefreshUtils.writePackage(entry.info.packageName, RefreshUtils.STATE_MEDIUM);
+                case RefreshUtils.STATE_STANDARD:
+                    mRefreshUtils.writePackage(entry.info.packageName, RefreshUtils.STATE_STANDARD);
                     break;
                 case RefreshUtils.STATE_HIGH:
                     mRefreshUtils.writePackage(entry.info.packageName, RefreshUtils.STATE_HIGH);
