@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingMode="stack">
+    <item>
+        <shape>
+            <corners android:radius="28.0dip" />
+            <solid android:color="?android:attr/colorControlNormal" />
+            <size android:height="30dp" />
+        </shape>
+    </item>
+    <item android:gravity="end|center" android:bottom="5dp" android:height="15dip" android:width="15dip" android:drawable="@drawable/arrow_drop_down" android:start="20dip" android:end="8dip" />
+</layer-list>
