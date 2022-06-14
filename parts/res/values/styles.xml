@@ -17,4 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
+
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
+
+    <style name="PopupTheme" parent="@android:style/Widget.PopupMenu">
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:popupAnimationStyle">@anim/fade_in_animation</item>
+    </style>
 </resources>
