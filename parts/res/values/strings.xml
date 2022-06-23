@@ -22,16 +22,31 @@
     <string name="saturation_slider_title">Saturation</string>
     <string name="reset_default_button_title">Reset to default configuration</string>
     <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
-    <string name="contrast_slider_title">Contrast</string>
     <string name="value_slider_title">Value</string>
-    <string name="hue_slider_title">Hue</string>
-
-
+    <string name="contrast_slider_title">Contrast</string>
     <string name="color_profiles">Color profiles</string>
-    <string name="color_profile_default">Default</string>
-    <string name="color_profile_cold">Cold</string>
-    <string name="color_profile_warm">Warm</string>
-    <string name="color_profile_saturated">Saturated</string>
+
+    <!-- Kcal Presets -->
+    <string name="default_values">Default</string>
+    <string name="version_1">Version 1</string>
+    <string name="version_2">Version 2</string>
+    <string name="version_3">Version 3</string>
+    <string name="triluminous">Triluminous</string>
+    <string name="deep_black_and_white">Deep Black and White</string>
+    <string name="deep_natural">Deep Natural</string>
+    <string name="cool_amoled">Cool Amoled</string>
+    <string name="extreme_amoled">Extreme Amoled</string>
+    <string name="warm_amoled">Warm Amoled</string>
+    <string name="hybrid_mamba">Hybrid Mamba</string>
+    <string name="deep_amoled">Deep Amoled</string>
+    <string name="cold_amoled">Cold New Amoled</string>
+    <string name="clean_deep">Deep and Clean</string>
+    <string name="shamshung">Shamshung</string>
+    <string name="nature">Nature</string>
+    <string name="shamshung_cold">Cool Shamshung</string>
+    <string name="cold_as_ice">Extreme Cold</string>
+    <string name="deep_saturated">Deep and Saturated</string>
+    <string name="black_af">Deep Saturated Black</string>
 
      <!-- Refresh rate  -->
     <string name="refresh_title">App Refresh Rate</string>
@@ -42,12 +57,12 @@
     <string name="refresh_high">High</string>
     <string name="refresh_extreme">Smooth</string>
 
-     <!-- Haptic Level Settings -->
-     <string name="haptic_title">Haptic feedback</string>
-     <string name="haptic_warning">Setting-up haptic level too high may cause permanent hardware damage, use at your own risk</string>
-     <string name="haptic_summary">Customize vibration intensity</string>
-     <string name="haptic_level_title">Level</string>
-     <string name="haptic_level_summary">The amount of vibration intensity</string>
-     <string name="haptic_level_summary_incompatible">Kernel did not support this feature</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Haptic feedback</string>
+    <string name="haptic_warning">Setting-up haptic level too high may cause permanent hardware damage, use at your own risk</string>
+    <string name="haptic_summary">Customize vibration intensity</string>
+    <string name="haptic_level_title">Level</string>
+    <string name="haptic_level_summary">The amount of vibration intensity</string>
+    <string name="haptic_level_summary_incompatible">Kernel did not support this feature</string>
 
 </resources>

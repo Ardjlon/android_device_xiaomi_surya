@@ -134,9 +134,25 @@
 
     <!-- KCal profiles -->
     <string-array name="color_profiles_names">
-        <item>@string/color_profile_default</item>
-        <item>@string/color_profile_cold</item>
-        <item>@string/color_profile_warm</item>
-        <item>@string/color_profile_saturated</item>
+        <item>@string/default_values</item>
+        <item>@string/version_1</item>
+        <item>@string/version_2</item>
+        <item>@string/version_3</item>
+        <item>@string/triluminous</item>
+        <item>@string/deep_black_and_white</item>
+        <item>@string/deep_natural</item>
+        <item>@string/cool_amoled</item>
+        <item>@string/extreme_amoled</item>
+        <item>@string/warm_amoled</item>
+        <item>@string/hybrid_mamba</item>
+        <item>@string/deep_amoled</item>
+        <item>@string/cold_amoled</item>
+        <item>@string/clean_deep</item>
+        <item>@string/shamshung</item>
+        <item>@string/nature</item>
+        <item>@string/shamshung_cold</item>
+        <item>@string/cold_as_ice</item>
+        <item>@string/deep_saturated</item>
+        <item>@string/black_af</item>
     </string-array>
 </resources>

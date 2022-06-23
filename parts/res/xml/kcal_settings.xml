@@ -19,54 +19,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--PreferenceCategory
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"-->
-    <SwitchPreference
-            android:defaultValue="true"
-            android:icon="@drawable/ic_kcal"
-            android:key="kcal_enable"
-            android:summary="@string/kcal_enable_summary"
-            android:title="@string/kcal_enable_title" />
 
-    	<Preference
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_kcal"
+        android:key="kcal_enable"
+        android:summary="@string/kcal_enable_summary"
+        android:title="@string/kcal_enable_title" />
+
+    <Preference
             android:key="color_profiles"
             android:title="@string/color_profiles"
             android:dependency="kcal_enable"
-            android:icon="@drawable/ic_color_picker" />
+            android:icon="@drawable/ic_color_picker"/>
 
-        <Preference
+    <Preference
             android:icon="@drawable/ic_reset"
             android:key="reset_default_button"
             android:summary="@string/reset_default_button_summary"
             android:title="@string/reset_default_button_title" />
 
-        <PreferenceCategory
+    <PreferenceCategory
             android:key="kcal_rgb_preference_category"
             android:title="@string/kcal_rgb_preference_category_title">
 
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_seek_red"
+            android:icon="@drawable/ic_kcal_red"
             android:key="red_slider"
             android:max="256" />
 
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_seek_green"
+            android:icon="@drawable/ic_kcal_green"
             android:key="green_slider"
             android:max="256" />
 
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_seek_blue"
+            android:icon="@drawable/ic_kcal_blue"
             android:key="blue_slider"
             android:max="256" />
     </PreferenceCategory>
@@ -75,34 +69,26 @@
         android:key="kcal_calibration_preference_category"
         android:title="@string/kcal_calibration_preference_category_title">
 
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
-            android:defaultValue="127"
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
+            android:defaultValue="256"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
             android:key="saturation_slider"
             android:max="383"
             android:title="@string/saturation_slider_title" />
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
-            android:defaultValue="0"
+
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
+            android:defaultValue="255"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
-            android:key="hue_slider"
-            android:max="383"
-            android:title="@string/hue_slider_title" />
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
-            android:defaultValue="127"
-            android:dependency="kcal_enable"
-            android:layout_height="10dp"
             android:key="value_slider"
             android:max="383"
-            android:title="@string/saturation_slider_title" />
-        <org.lineageos.settings.color.model.KcalSeekBarPreference
-            android:defaultValue="127"
+            android:title="@string/value_slider_title" />
+
+        <org.lineageos.settings.display.kcal.KcalSeekBarPreference
+            android:defaultValue="256"
             android:dependency="kcal_enable"
-            android:layout_height="10dp"
             android:key="contrast_slider"
             android:max="383"
             android:title="@string/contrast_slider_title" />
-        </PreferenceCategory>
+    </PreferenceCategory>
 </PreferenceScreen>
 
