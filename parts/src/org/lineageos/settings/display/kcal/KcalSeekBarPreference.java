@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.color.model;
+package org.lineageos.settings.display.kcal;
 
 import android.content.Context;
 import android.util.AttributeSet;
