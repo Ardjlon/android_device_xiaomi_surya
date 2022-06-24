@@ -23,6 +23,7 @@
      <!-- Haptic Level Settings -->
      <string name="haptic_title">Retroalimentación háptica</string>
      <string name="haptic_level_title">Nivel</string>
+     <string name="haptic_summary">Personalizar intensidad de vibración</string>
      <string name="haptic_level_summary">Ajusta el nivel de fuerza de la vibración háptica general</string>
      <string name="haptic_level_summary_incompatible">Su núcleo (kernel) no admite esta función</string>
 
@@ -42,4 +43,45 @@
     <string name="reset_default_button_title">Resturar configuración</string>
     <string name="reset_default_button_summary">Restablecer todos los ajustes a valores predeterminados</string>
     <string name="contrast_slider_title">Contraste</string>
+    <string name="value_slider_title">Valor</string>
+    <string name="color_profiles">Perfiles de color</string>
+
+    <!-- Kcal Presets -->
+    <string name="default_values">Predeterminado</string>
+    <string name="version_1">Versión 1</string>
+    <string name="version_2">Versión 2</string>
+    <string name="version_3">Versión 3</string>
+    <string name="triluminous">Triluminoso</string>
+    <string name="deep_black_and_white">Blanco y negro profundo</string>
+    <string name="deep_natural">Profundo Natural</string>
+    <string name="cool_amoled">Amoled fresco</string>
+    <string name="extreme_amoled">Amoled extremo</string>
+    <string name="warm_amoled">Amoled caliente</string>
+    <string name="hybrid_mamba">Mamba híbrida</string>
+    <string name="deep_amoled">Amoled profundo</string>
+    <string name="cold_amoled">Nuevo Amoled frío</string>
+    <string name="clean_deep">Profundo y limpio</string>
+    <string name="shamshung">Shamshung</string>
+    <string name="nature">Naturaleza</string>
+    <string name="shamshung_cold">Shamshung frío</string>
+    <string name="cold_as_ice">Frío extremo</string>
+    <string name="deep_saturated">Profundo y saturado</string>
+    <string name="black_af">Negro saturado profundo</string>
+
+    <!-- Refresh Rate -->
+    <string name="refresh_default">Sistema</string>
+    <string name="refresh_low">Bajo</string>
+    <string name="refresh_standard">Medio</string>
+    <string name="refresh_high">Alto</string>
+    <string name="refresh_extreme">Máximo</string>
+
+    <!-- Thermal settings -->
+    <string name="thermal_title">Perfil de optimización</string>
+    <string name="thermal_summary">Ajusta los perfiles térmicos por aplicación para un rendimiento óptimo</string>
+    <string name="thermal_default">No optimizado</string>
+    <string name="thermal_benchmark">Rendimiento</string>
+    <string name="thermal_camera">Cámara</string>
+    <string name="thermal_dialer">Teléfono</string>
+    <string name="thermal_gaming">Juegos</string>
+
 </resources>
