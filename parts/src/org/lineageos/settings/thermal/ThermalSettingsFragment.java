@@ -265,7 +265,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
             if (convertView != null) {
                 view = (TextView) convertView;
             } else {
-                view = (TextView) inflater.inflate(android.R.layout.simple_spinner_dropdown_item,
+                view = (TextView) inflater.inflate(R.layout.spinner_dropdown_item,
                         parent, false);
             }
 
