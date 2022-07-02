@@ -194,14 +194,12 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
     private int getStateDrawable(int state) {
         switch (state) {
-            case ThermalUtils.STATE_BENCHMARK:
-                return R.drawable.ic_thermal_benchmark;
             case ThermalUtils.STATE_CAMERA:
                 return R.drawable.ic_thermal_camera;
             case ThermalUtils.STATE_DIALER:
                 return R.drawable.ic_thermal_dialer;
-            case ThermalUtils.STATE_GAMING:
-                return R.drawable.ic_thermal_gaming;
+            case ThermalUtils.STATE_PERFORMANCE:
+                return R.drawable.ic_thermal_performance;
             case ThermalUtils.STATE_STREAMING:
                 return R.drawable.ic_thermal_streaming;
             case ThermalUtils.STATE_DEFAULT:
@@ -236,10 +234,9 @@ public class ThermalSettingsFragment extends PreferenceFragment
         private final LayoutInflater inflater;
         private final int[] items = {
                 R.string.thermal_default,
-                R.string.thermal_benchmark,
                 R.string.thermal_camera,
                 R.string.thermal_dialer,
-                R.string.thermal_gaming,
+                R.string.thermal_performance,
                 R.string.thermal_streaming,
         };
 
@@ -335,8 +332,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
             int packageState = mThermalUtils.getStateForPackage(entry.info.packageName);
             holder.mode.setSelection(packageState, false);
             holder.mode.setTag(entry);
-            if (packageState == ThermalUtils.STATE_BENCHMARK ||
-                packageState == ThermalUtils.STATE_GAMING) {
+            if (packageState == ThermalUtils.STATE_PERFORMANCE) {
                 holder.touchIcon.setVisibility(View.VISIBLE);
             } else {
                 holder.touchIcon.setVisibility(View.INVISIBLE);
