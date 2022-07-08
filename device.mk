@@ -122,11 +122,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Camera motor
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.motor@1.0.vendor \
-    XiaomiPopupCamera
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
