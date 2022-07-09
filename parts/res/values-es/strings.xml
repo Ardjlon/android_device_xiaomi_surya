@@ -83,5 +83,6 @@
     <string name="thermal_camera">Cámara</string>
     <string name="thermal_dialer">Teléfono</string>
     <string name="thermal_gaming">Juegos</string>
+    <string name="thermal_streaming">Streaming</string>
 
 </resources>
