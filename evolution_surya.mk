@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+DEVICE_PATH := device/xiaomi/surya
 
 # Inherit framework first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -40,7 +41,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Target
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_CUSTOM_BOOTANIMATION := $(DEVICE_PATH)/bootanimation/bootanimation_evo_1080.zip
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
