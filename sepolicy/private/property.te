@@ -1,1 +1,2 @@
+type xiaomiparts_prop, property_type;
 type persist_lcd_prop, property_type, system_property_type;

@@ -1,2 +1,5 @@
 # XiaomiParts
 persist.lcd.                   u:object_r:persist_lcd_prop:s0
+
+# Device Parts
+persist.xiaomiparts.                   u:object_r:xiaomiparts_prop:s0

@@ -22,4 +22,8 @@ allow xiaomiparts_app {
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
 allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
 
+# Allow xiaomiparts_app read and write to HBM and CABC nodes
+get_prop(xiaomiparts_app, xiaomiparts_prop)
+set_prop(xiaomiparts_app, xiaomiparts_prop)
+
 binder_call(xiaomiparts_app, gpuservice)
