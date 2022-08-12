@@ -1,0 +1,2 @@
+allow platform_app audio_config_prop:file { read };
+allow platform_app rootfs:dir { read };
