@@ -97,6 +97,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 TARGET_KERNEL_VERSION := 4.14
 
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_OPTIONAL_LD := true
 TARGET_KERNEL_CLANG_VERSION := 16
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-16
 
