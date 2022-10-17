@@ -96,6 +96,7 @@ TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 16
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
