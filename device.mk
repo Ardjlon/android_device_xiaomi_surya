@@ -115,6 +115,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Google Camera Lite
+PRODUCT_PACKAGES += \
+       GoogleCameraGo
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts \
