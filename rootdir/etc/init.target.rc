@@ -55,6 +55,10 @@ on init
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
+    # DT2W
+    chown system system /sys/touchpanel/double_tap
+    chmod 0755 /sys/touchpanel/double_tap
+
 on init && property:ro.boot.hwname=surya
     setprop ro.boot.product.hardware.sku surya
 
