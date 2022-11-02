@@ -4,13 +4,3 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-cc_library_shared {
-    name: "libpiex_shim",
-    srcs: [
-        "libpiex_shim.cpp",
-    ],
-    vendor: true,
-    shared_libs: [
-        "libpiex",
-    ],
-}
