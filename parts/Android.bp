@@ -14,8 +14,9 @@ android_app {
     privileged: true,
 
     static_libs: [
+        "SettingsLib",
         "org.lineageos.settings.resources",
-        "SettingsLib",     
+        "parts.settings.resources",
     ],
 
     optimize: {
