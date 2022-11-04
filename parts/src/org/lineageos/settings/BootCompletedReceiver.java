@@ -27,6 +27,7 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.display.KcalUtils;
 import org.lineageos.settings.kprofiles.KProfilesUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
@@ -48,6 +49,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Log.d(TAG, "Dirac is not present in system");
         }
         DozeUtils.checkDozeService(context);
+        PocketService.startService(context);
         ThermalUtils.startService(context);
         HapticUtils.restoreLevel(context);
         if (KcalUtils.isKcalSupported())

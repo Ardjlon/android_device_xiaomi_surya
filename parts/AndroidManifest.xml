@@ -288,5 +288,10 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".doze.PocketService"
+            android:permission="PocketService"
+            android:exported="true">
+        </service>
     </application>
 </manifest>
