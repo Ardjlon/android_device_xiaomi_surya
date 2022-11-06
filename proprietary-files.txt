@@ -536,31 +536,7 @@ vendor/framework/com.fingerprints.extension.jar
 -vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 -vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE=vendor.qti.hardware.fm@1.0_vendor
 
-# Graphics from v655 by tryigitx
--vendor/lib64/egl/eglSubDriverAndroid.so
--vendor/lib64/egl/libEGL_adreno.so
--vendor/lib64/egl/libGLESv1_CM_adreno.so
--vendor/lib64/egl/libGLESv2_adreno.so
--vendor/lib64/egl/libq3dtools_adreno.so
--vendor/lib64/egl/libq3dtools_esx.so
--vendor/lib64/hw/vulkan.adreno.so
--vendor/lib64/libC2D2.so
--vendor/lib64/libCB.so
--vendor/lib64/libOpenCL.so
--vendor/lib64/libadreno_app_profiles.so
--vendor/lib64/libadreno_utils.so
--vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libdmabufheap.so
--vendor/lib64/libgsl.so
--vendor/lib64/libllvm-glnext.so
--vendor/lib64/libllvm-qcom.so
--vendor/lib64/libllvm-qgl.so
--vendor/lib64/notgsl.so
--vendor/lib64/vkbadreno_app_profiles.so
--vendor/lib64/vkbadreno_utils.so
--vendor/lib64/vkbgsl.so
--vendor/lib64/vkbllvm-glnext.so
--vendor/lib64/vkbllvm-qgl.so
+# Graphics
 -vendor/lib/egl/eglSubDriverAndroid.so
 -vendor/lib/egl/libEGL_adreno.so
 -vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -571,20 +547,26 @@ vendor/lib64/libdmabufheap.so
 -vendor/lib/libC2D2.so
 -vendor/lib/libCB.so
 -vendor/lib/libOpenCL.so
--vendor/lib/libadreno_app_profiles.so
 -vendor/lib/libadreno_utils.so
 -vendor/lib/libc2d30_bltlib.so
-vendor/lib/libdmabufheap.so
 -vendor/lib/libgsl.so
 -vendor/lib/libllvm-glnext.so
 -vendor/lib/libllvm-qcom.so
--vendor/lib/libllvm-qgl.so
--vendor/lib/notgsl.so
--vendor/lib/vkbadreno_app_profiles.so
--vendor/lib/vkbadreno_utils.so
--vendor/lib/vkbgsl.so
--vendor/lib/vkbllvm-glnext.so
--vendor/lib/vkbllvm-qgl.so
+-vendor/lib64/egl/eglSubDriverAndroid.so
+-vendor/lib64/egl/libEGL_adreno.so
+-vendor/lib64/egl/libGLESv1_CM_adreno.so
+-vendor/lib64/egl/libGLESv2_adreno.so
+-vendor/lib64/egl/libq3dtools_adreno.so
+-vendor/lib64/egl/libq3dtools_esx.so
+-vendor/lib64/hw/vulkan.adreno.so
+-vendor/lib64/libC2D2.so
+-vendor/lib64/libCB.so
+-vendor/lib64/libOpenCL.so
+-vendor/lib64/libadreno_utils.so
+-vendor/lib64/libc2d30_bltlib.so
+-vendor/lib64/libgsl.so
+-vendor/lib64/libllvm-glnext.so
+-vendor/lib64/libllvm-qcom.so
 
 # Graphics firmware
 vendor/firmware/a615_zap.b00
