@@ -3,3 +3,6 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 
 # KProfiles
 type vendor_sysfs_kprofiles, sysfs_type, fs_type;
+
+# DT2W
+type proc_tp_gesture, fs_type, proc_type;

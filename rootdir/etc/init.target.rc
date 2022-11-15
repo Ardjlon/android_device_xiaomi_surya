@@ -56,8 +56,8 @@ on init
     write /proc/sys/kernel/sched_lib_mask_force 255
 
     # DT2W
-    chown system system /sys/touchpanel/double_tap
-    chmod 0755 /sys/touchpanel/double_tap
+    chown system system /proc/tp_gesture
+    chmod 0644 /proc/tp_gesture
 
 on init && property:ro.boot.hwname=surya
     setprop ro.boot.product.hardware.sku surya
