@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Spark OS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := spark_surya
+PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
@@ -30,9 +30,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 
-# Spark stuffs
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.spark.maintainer=Ardjlon \
-    ro.spark.device.name=POCO X3 \
-    ro.spark.group.url=https://t.me/ardjlonsupport
-
+# Rice stuffs
+RICE_CHIPSET := Qualcomm Snapdragon™ 732G
+RICE_PACKAGE_TYPE := AOSP
+RICE_MAINTAINER := Ardjlon
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
