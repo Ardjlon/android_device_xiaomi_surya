@@ -28,10 +28,13 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+WITH_GMS := true
 
 # Rice stuffs
 RICE_CHIPSET := Qualcomm Snapdragon™ 732G
 RICE_PACKAGE_TYPE := AOSP
 RICE_MAINTAINER := Ardjlon
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
+# MEME Camera
+$(call inherit-product, vendor/miuicamera/config.mk)
