@@ -29,6 +29,7 @@
 
 #include <vector>
 
+#include <android-base/logging.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -92,6 +93,7 @@ void vendor_load_properties() {
     std::string description;
     std::string marketname;
 
+    if (access("/system/bin/recovery", F_OK) != 0) {
     if (hwname == "karna") {
         model = "M2007J20CI";
         name = "karna_in";
@@ -110,6 +112,7 @@ void vendor_load_properties() {
             model = "M2007J20CT";
         else
             model = "M2007J20CG";
+    }
     }
 
     flavor = device + "-" + build_type;
