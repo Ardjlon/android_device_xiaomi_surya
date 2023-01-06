@@ -31,10 +31,7 @@ TARGET_GAPPS_ARCH := arm64
 WITH_GMS := true
 
 # Rice stuffs
-RICE_CHIPSET := Qualcomm Snapdragon™ 732G
+RICE_CHIPSET := Snapdragon™ 732G
 RICE_PACKAGE_TYPE := AOSP
 RICE_MAINTAINER := Ardjlon
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-
-# MEME Camera
-$(call inherit-product, vendor/miuicamera/config.mk)
